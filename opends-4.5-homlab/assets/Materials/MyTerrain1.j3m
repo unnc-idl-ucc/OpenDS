@@ -1,0 +1,27 @@
+Material MyTerrain : Common/MatDefs/Terrain/TerrainLighting.j3md {
+  MaterialParameters {
+    useTriPlanarMapping : false
+    Shininess : 0.0
+    
+    AlphaMap : Textures/Terrain/splat/alpha1.png
+    AlphaMap_1 : Textures/Terrain/splat/alpha2.png
+    
+    DiffuseMap : Repeat Textures/Terrain/splat/dirt.jpg
+    DiffuseMap_0_scale : 16
+    NormalMap : Textures/Terrain/splat/dirt_normal.png
+    
+    DiffuseMap_1 : Repeat Textures/Terrain/splat/grass.jpg
+    DiffuseMap_1_scale : 64
+    NormalMap_1 : Textures/Terrain/splat/grass_normal.jpg
+    
+    DiffuseMap_2 : Repeat Textures/Terrain/splat/road.jpg
+    DiffuseMap_2_scale : 128
+    NormalMap_2: Textures/Terrain/splat/road_normal.png
+    
+    DiffuseMap_3 : Repeat Textures/Terrain/BrickWall/BrickWall.jpg
+    DiffuseMap_3_scale : 128
+    
+    DiffuseMap_4 : Repeat Textures/Terrain/Pond/Pond.jpg
+    DiffuseMap_4_scale : 128
+  }
+}

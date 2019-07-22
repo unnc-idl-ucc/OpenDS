@@ -1,0 +1,8 @@
+WayPoint_;null;0,0,0;0,0,0;0.4,0.4,0.4;
+SpeedSign_;Models/SpeedSign/SpeedSignMerged.scene;1,-0.5,-5;0,0,0;1,1,1;
+Exit_;Models/RoadSigns/otherSigns/Exit/DetourDirectionSign.scene;3,-2,-5;0,0,0;1.6,1.6,1.6;
+Exit50m_;Models/RoadSigns/otherSigns/Highway_50m/100m.scene;1,-0.5,-7;0,0,0;0.01,0.01,0.01;
+Exit100m_;Models/RoadSigns/otherSigns/Highway_100m/100m.scene;1,-0.5,-7;0,0,0;0.01,0.01,0.01;
+Exit150m_;Models/RoadSigns/otherSigns/Highway_150m/100m.scene;1,-0.5,-7;0,0,0;0.01,0.01,0.01;
+Next_exit_;Models/RoadSigns/otherSigns/Next_exit/Next_exit.scene;1,-0.5,-7;0,0,0;0.015,0.015,0.015;
+Yield_;Models/RoadSigns/otherSigns/Yield/Yield.scene;-2,-0.5,-5;0,89.7,0;1,1,1;

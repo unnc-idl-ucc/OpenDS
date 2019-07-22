@@ -1,0 +1,121 @@
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.0093</entry><entry>0.0</entry><entry>22902.826</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.0298</entry><entry>0.0</entry><entry>22900.658</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.0537</entry><entry>0.0</entry><entry>22898.135</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_¡è">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.07764</entry><entry>0.0</entry><entry>22895.62</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.09814</entry><entry>0.0</entry><entry>22893.463</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.1221</entry><entry>0.0</entry><entry>22890.959</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_¡ì">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.146</entry><entry>0.0</entry><entry>22888.457</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_¡§">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.1665</entry><entry>0.0</entry><entry>22886.316</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.1903</entry><entry>0.0</entry><entry>22883.828</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.2138</entry><entry>0.0</entry><entry>22881.34</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.23395</entry><entry>0.0</entry><entry>22879.217</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.25745</entry><entry>0.0</entry><entry>22876.742</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.28094</entry><entry>0.0</entry><entry>22874.273</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.3011</entry><entry>0.0</entry><entry>22872.164</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.32794</entry><entry>0.0</entry><entry>22869.352</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_¡ã">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.3481</entry><entry>0.0</entry><entry>22867.254</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_¡À">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.3716</entry><entry>0.0</entry><entry>22864.807</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.39825</entry><entry>0.0</entry><entry>22862.018</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.4213</entry><entry>0.0</entry><entry>22859.584</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.4411</entry><entry>0.0</entry><entry>22857.498</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.4609</entry><entry>0.0</entry><entry>22855.424</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-722.80566</entry><entry>0.0</entry><entry>22853.111</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_¡¤">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-723.39575</entry><entry>0.0</entry><entry>22850.908</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-724.04517</entry><entry>0.0</entry><entry>22848.73</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-724.6097</entry><entry>0.0</entry><entry>22846.867</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-725.2672</entry><entry>0.0</entry><entry>22844.707</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-725.8295</entry><entry>0.0</entry><entry>22842.855</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-726.57684</entry><entry>0.0</entry><entry>22840.762</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-727.73157</entry><entry>0.0</entry><entry>22838.977</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint id="WayPoint_?">
+			<translation><vector jtype = "java_lang_Float" size = "3"><entry>-729.02246</entry><entry>0.0</entry><entry>22837.752</entry></vector></translation>
+			<speed>40</speed>
+		</wayPoint>
+		<wayPoint 

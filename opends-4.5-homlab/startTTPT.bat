@@ -1,0 +1,1 @@
+java -Xmx4096m -jar OpenDS.jar assets\DrivingTasks\Projects\ThreeTruckPlatooningTask\threeTruckPlatooningTaskTerrain.xml

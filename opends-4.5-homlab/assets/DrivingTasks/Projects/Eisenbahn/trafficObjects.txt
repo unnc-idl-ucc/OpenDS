@@ -1,0 +1,16 @@
+TrafficCone_;Models/roadObjects/TrafficCone/TrafficCone.scene;1,0,-5;-90,0,0;0.7,0.7,0.7;
+Tree_;Models/Trees/Tree/Tree.obj;1,0,-5;0,0,0;1,1,1;
+WheelLoader_;Models/Cars/staticCars/WheelLoader/WheelLoader.scene;1,0,-5;-90,0,0;5,5,5;
+Ekskalator_;Models/Cars/staticCars/Ekskalator/Ekskalator.scene;1,0,-5;-90,0,0;1.5,1.5,1.5;
+DumpTruck_;Models/Cars/staticCars/DumpTruck/DumpTruck.scene;1,0,-5;-90,0,0;3.5,3.5,3.5;
+Barrier_;Models/roadObjects/BarrierProfil/Barrier-Profile.scene;1,0,-5;-90,0,0;0.007,0.007,0.007;
+Arrows_;Models/AnimatedRoadSigns/Arrows/LeftSmall/LeftSmall.scene;1,0,-5;-90,0,0;2.5,2.5,2.5;
+Police_;Models/AnimatedRoadSigns/CarPolice/CarPolice.scene;1,0,-5;-90,0,0;0.7,0.7,0.7;
+Trees_;Models/Trees/1-1/tree-1.scene;1,0,-5;-90,0,0;0.5,0.5,0.5;
+Trees2_;Models/Trees/2-2/tree-2.scene;1,0,-5;-90,0,0;0.5,0.5,0.5;
+Trees3_;Models/Trees/3-3/tree-3.scene;1,0,-5;-90,0,0;0.5,0.5,0.5;
+PedestrianAhead_;Models/RoadSigns/dangerSigns/PedestrianCrossingAhead/PedestrianCrossingAhead.scene;1,-1,-5;0,0,0;0.7,0.7,0.7;
+OneWay_;Models/RoadSigns/otherSigns/OneWayStreet/OneWayStreet.scene;1,-1,-5;0,0,0;0.7,0.7,0.7;
+PriorityRoad_;Models/RoadSigns/squarePlatesWithPole/PriorityRoad/PriorityRoad.scene;1,-1,-5;0,0,0;0.7,0.7,0.7;
+Start_;Models/RoadSigns/otherSigns/Start/Stop.scene;1,1,1;0,0,0;1,1,1;
+Start_;Models/RoadSigns/otherSigns/Start/Stop.scene;1,1,1;0,0,0;1,1,1;

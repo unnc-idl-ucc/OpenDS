@@ -1,0 +1,16 @@
+Material MyTerrain : Common/MatDefs/Terrain/Terrain.j3md {
+  MaterialParameters {
+
+    Alpha : Textures/Terrain/splat/alphamap.png
+    
+    Tex1 : Repeat Textures/Terrain/splat/grass.jpg
+    Tex1Scale : 64
+    
+    Tex2 : Repeat Textures/Terrain/splat/dirt.jpg
+    Tex2Scale : 32
+    
+    Tex3 : Repeat Textures/Terrain/splat/road.jpg
+    Tex3Scale : 128
+
+  }
+}

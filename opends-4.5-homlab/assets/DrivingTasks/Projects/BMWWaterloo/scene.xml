@@ -1,0 +1,1670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scene xmlns="http://opends.eu/drivingtask/scene"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="http://opends.eu/drivingtask/scene ../../Schema/scene.xsd">
+
+	<sounds>
+
+	</sounds>
+
+	<pictures>
+
+	</pictures>
+
+	<movies>
+
+	</movies>
+
+	<models>
+
+
+		<model id="driverCar" key="Models/Cars/drivingCars/bmw1/Car.j3o">
+			<mass>800</mass>
+			<visible>true</visible>
+			<collisionShape>meshShape</collisionShape>
+
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>1</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+				</vector>
+			</scale>
+
+			<rotation quaternion="false">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<!--<entry>0</entry>-->
+          <entry>6</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<!--   <entry>-993.0232</entry>   <entry>0.115547866</entry>    <entry>608.7699</entry>    -->
+					
+					<!--  <entry>-35.114414</entry>	  <entry>0.11950453</entry>     <entry>807.82025</entry>   -->
+          
+		  
+					<!-- The second waypoint-->
+					<!--<entry>-32.797253</entry><entry>0.12054783</entry><entry>820.6648</entry>--> 
+		  
+					<!--in front of supermarket-->
+					<!-- <entry>-25.202982</entry>          <entry>0.11556178</entry>          <entry>378.21573</entry> -->
+					
+					<!-- "WayPoint_1" -->
+					<entry>-34.72327</entry><entry>0.120547995</entry><entry>812.2758</entry>
+		  
+		  
+				</vector>
+			</translation>
+
+		</model>
+
+		<!--<model id="TrafficLight_1" key="Models/TrafficLight/trafficlight.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.7</entry><entry>0.7</entry><entry>0.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>0</entry><entry>179.69447</entry><entry>0</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>333.7579</entry><entry>-0.87328035</entry><entry>-729.5577</entry></vector></translation></model>-->
+
+		<model id="City" key="Scenes/BMW/BMW.scene">
+			<mass>0</mass>
+			<visible>true</visible>
+			<collisionShape>meshShape</collisionShape>
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>1</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+				</vector>
+			</scale>
+
+			<rotation quaternion="false">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>0</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>0</entry>
+					<entry>0</entry>
+				</vector>
+			</translation>
+		</model>
+
+    <!--<model id="edgeobj_46" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-19.883646</entry>
+          <entry>0.115561835</entry>
+          <entry>291.0165</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_47" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-9.953409</entry>
+          <entry>0.115561835</entry>
+          <entry>292.19565</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_48" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-14.333584</entry>
+          <entry>0.115561746</entry>
+          <entry>244.2772</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_49" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-4.403351</entry>
+          <entry>0.115561746</entry>
+          <entry>245.45638</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_50" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-7.919439</entry>
+          <entry>0.115561865</entry>
+          <entry>190.26189</entry>
+        </vector>
+      </translation>
+    </model>
+    <model id="edgeobj_51" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>2.0107932</entry>
+          <entry>0.115561865</entry>
+          <entry>191.44109</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_52" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-2.156842</entry>
+          <entry>0.11555595</entry>
+          <entry>139.62624</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_53" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>7.8131065</entry>
+          <entry>0.11555595</entry>
+          <entry>140.4009</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_54" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.5225525</entry>
+          <entry>0.11556185</entry>
+          <entry>96.82067</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_55" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>10.521261</entry>
+          <entry>0.11556185</entry>
+          <entry>96.98136</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_56" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.6488733</entry>
+          <entry>0.11557312</entry>
+          <entry>79.47057</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_57" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>10.637346</entry>
+          <entry>0.11557312</entry>
+          <entry>78.99056</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_58" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-0.35113907</entry>
+          <entry>0.11556202</entry>
+          <entry>65.12579</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_59" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>9.531385</entry>
+          <entry>0.11556202</entry>
+          <entry>63.59749</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_60" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-2.3543746</entry>
+          <entry>0.115559615</entry>
+          <entry>53.5265</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_61" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>7.4163218</entry>
+          <entry>0.115559615</entry>
+          <entry>51.397305</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_62" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-4.773519</entry>
+          <entry>0.11556184</entry>
+          <entry>43.767277</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_63" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>4.605804</entry>
+          <entry>0.11556184</entry>
+          <entry>40.29909</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_64" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-8.52421</entry>
+          <entry>0.11556189</entry>
+          <entry>35.200665</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_65" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-0.11478472</entry>
+          <entry>0.11556189</entry>
+          <entry>29.78942</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_66" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-14.114981</entry>
+          <entry>0.1154261</entry>
+          <entry>27.481598</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_67" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-7.4163475</entry>
+          <entry>0.1154261</entry>
+          <entry>20.056751</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_68" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-21.679554</entry>
+          <entry>0.11555209</entry>
+          <entry>20.926052</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_69" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-15.794441</entry>
+          <entry>0.11555209</entry>
+          <entry>12.841161</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_70" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-26.354069</entry>
+          <entry>0.11557762</entry>
+          <entry>17.670214</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_71" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-21.970287</entry>
+          <entry>0.11557762</entry>
+          <entry>8.682308</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_72" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-35.899136</entry>
+          <entry>0.11555946</entry>
+          <entry>13.705488</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_73" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-33.107716</entry>
+          <entry>0.11555946</entry>
+          <entry>4.1029906</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_74" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-51.815952</entry>
+          <entry>0.11538961</entry>
+          <entry>9.40061</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_75" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-50.364162</entry>
+          <entry>0.11538961</entry>
+          <entry>-0.49344492</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_76" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-66.47409</entry>
+          <entry>0.115561835</entry>
+          <entry>7.181263</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_77" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-65.41789</entry>
+          <entry>0.115561835</entry>
+          <entry>-2.762802</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_78" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-84.54838</entry>
+          <entry>0.11556184</entry>
+          <entry>5.5873632</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_79" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-83.99259</entry>
+          <entry>0.11556184</entry>
+          <entry>-4.3971796</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_80" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-115.38926</entry>
+          <entry>0.115561865</entry>
+          <entry>4.102336</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_81" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-115.081505</entry>
+          <entry>0.115561865</entry>
+          <entry>-5.892927</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_82" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-140.4013</entry>
+          <entry>0.11556185</entry>
+          <entry>3.5025668</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_83" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-140.35913</entry>
+          <entry>0.11556185</entry>
+          <entry>-6.4973445</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_84" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-195.29768</entry>
+          <entry>0.115562074</entry>
+          <entry>3.4281805</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_85" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-195.29701</entry>
+          <entry>0.115562074</entry>
+          <entry>-6.5718193</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_86" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-862.6809</entry>
+          <entry>0.11556187</entry>
+          <entry>4.2557044</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_87" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-863.4785</entry>
+          <entry>0.11556187</entry>
+          <entry>-5.712436</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_88" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-878.2307</entry>
+          <entry>0.115558416</entry>
+          <entry>5.979952</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_89" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-880.39844</entry>
+          <entry>0.115558416</entry>
+          <entry>-3.782263</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_90" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-896.21356</entry>
+          <entry>0.11556176</entry>
+          <entry>10.272213</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_91" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-899.2878</entry>
+          <entry>0.11556176</entry>
+          <entry>0.7564893</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_92" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-914.6792</entry>
+          <entry>0.115563415</entry>
+          <entry>17.19624</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_93" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-919.0597</entry>
+          <entry>0.115563415</entry>
+          <entry>8.206743</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_94" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-932.0964</entry>
+          <entry>0.11556183</entry>
+          <entry>26.687119</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_95" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-937.4476</entry>
+          <entry>0.11556183</entry>
+          <entry>18.239353</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_96" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-944.19434</entry>
+          <entry>0.11556192</entry>
+          <entry>34.775665</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_97" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-950.73694</entry>
+          <entry>0.11556192</entry>
+          <entry>27.212965</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_98" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-955.9131</entry>
+          <entry>0.115561806</entry>
+          <entry>45.42628</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_99" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-963.2296</entry>
+          <entry>0.115561806</entry>
+          <entry>38.60951</entry>
+        </vector>
+      </translation>
+    </model>
+
+    <model id="edgeobj_100" key="Models/RoadSigns/W4-2R/W4-2R.scene">
+      <mass>0</mass>
+      <visible>true</visible>
+      <collisionShape>meshShape</collisionShape>
+      <scale>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+          <entry>0.05</entry>
+        </vector>
+      </scale>
+      <rotation quaternion="false">
+        <vector jtype="java_lang_Float" size="3">
+          <entry>270</entry>
+          <entry>-90</entry>
+          <entry>0</entry>
+        </vector>
+      </rotation>
+      <translation>
+        <vector jtype="java_lang_Float" size="3">
+          <entry>-966.747</entry>
+          <entry>0.11556184</entry>
+          <entry>57.619473</entry>
+        </vector>
+      </translation>
+    </model>-->
+
+
+  </models>
+
+	<geometries>
+		<box id="box">
+			<width>3</width>
+			<depth>1</depth>
+			<height>0.1</height>
+		</box>
+	</geometries>
+
+
+
+	<gravity>9.81</gravity>
+
+	<time>19:00:12</time>
+
+	<date>2010-11-25</date>
+
+	<lights>
+		<directionalLight>
+			<direction>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0.5</entry>
+					<entry>-0.5</entry>
+					<entry>0.5</entry>
+				</vector>
+			</direction>
+			<color>
+				<vector jtype="java_lang_Float" size="4">
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+				</vector>
+			</color>
+		</directionalLight>
+		<directionalLight>
+			<direction>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-0.5</entry>
+					<entry>-0.5</entry>
+					<entry>0.5</entry>
+				</vector>
+			</direction>
+			<color>
+				<vector jtype="java_lang_Float" size="4">
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+				</vector>
+			</color>
+		</directionalLight>
+		<directionalLight>
+			<direction>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0.5</entry>
+					<entry>-0.5</entry>
+					<entry>-0.5</entry>
+				</vector>
+			</direction>
+			<color>
+				<vector jtype="java_lang_Float" size="4">
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+				</vector>
+			</color>
+		</directionalLight>
+		<directionalLight>
+			<direction>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-0.5</entry>
+					<entry>-0.5</entry>
+					<entry>-0.5</entry>
+				</vector>
+			</direction>
+			<color>
+				<vector jtype="java_lang_Float" size="4">
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+				</vector>
+			</color>
+		</directionalLight>
+	</lights>
+	<skyTexture>Textures/Sky/Clouds/clouds.properties</skyTexture>
+</scene>

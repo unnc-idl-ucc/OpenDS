@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scene xmlns="http://opends.eu/drivingtask/scene"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="http://opends.eu/drivingtask/scene ../../Schema/scene.xsd">
+
+	<sounds>
+
+	</sounds>
+
+	<pictures>
+
+	</pictures>
+
+	<movies>
+
+	</movies>
+
+	<models>
+
+
+		<model id="driverCar" key="Models/Cars/drivingCars/bmw1/Car.j3o">
+			<mass>2800</mass>
+			<visible>true</visible>
+			<collisionShape>meshShape</collisionShape>
+
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>1</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+				</vector>
+			</scale>
+
+			<rotation quaternion="false">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>0</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+
+				
+				<!--in front of supermarket-->		
+<!--					
+
+					<entry>-32.797253</entry><entry>0.12054783</entry><entry>820.6648</entry>
+-->	
+
+				
+				
+					<entry>-32.797253</entry><entry>0.12054783</entry><entry>820.6648</entry>
+					
+					
+					
+					</vector>
+			</translation>
+
+		</model>
+
+		
+		
+		
+		<model id="City" key="Scenes/BMW/BMW.scene">
+			<mass>0</mass>
+			<visible>true</visible>
+			<collisionShape>meshShape</collisionShape>
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>1</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+				</vector>
+			</scale>
+
+			<rotation quaternion="false">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>0</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>0</entry>
+					<entry>0</entry>
+				</vector>
+			</translation>
+		</model>
+
+
+		
+		
+<model id="WheelLoader_1" key="Models/Cars/staticCars/WheelLoader/WheelLoader.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>4.2</entry><entry>4.2</entry><entry>4.2</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94605</entry><entry>-15.532196</entry><entry>-0.04894343</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-22.948483</entry><entry>0.14071666</entry><entry>783.5235</entry></vector></translation></model>
+<model id="Tree2_001" key="Models/Trees/2-2/tree-2.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.946075</entry><entry>-47.215916</entry><entry>-0.048934888</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-4.6573534</entry><entry>0.15012698</entry><entry>774.64905</entry></vector></translation></model>
+<model id="Tree3_001" key="Models/Trees/3-3/tree-3.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94608</entry><entry>-170.46931</entry><entry>-0.04896476</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>2.2513018</entry><entry>0.15012448</entry><entry>812.44934</entry></vector></translation></model>
+<model id="Tree4_001" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.9461</entry><entry>-170.17532</entry><entry>-0.04899295</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>3.597292</entry><entry>0.15011965</entry><entry>839.13824</entry></vector></translation></model>
+
+
+<model id="DumpTruck_1" key="Models/Cars/staticCars/DumpTruck/DumpTruck.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>3.0</entry><entry>3.0</entry><entry>3.0</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.942444</entry><entry>-5.285154</entry><entry>-0.048942152</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-29.880754</entry><entry>0.14102164</entry><entry>934.8449</entry></vector></translation></model>
+<model id="Ekskalator_1" key="Models/Cars/staticCars/Ekskalator/Ekskalator.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>1.7</entry><entry>1.7</entry><entry>1.7</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.95106</entry><entry>75.45649</entry><entry>0.053910688</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-18.394503</entry><entry>0.14071429</entry><entry>903.13745</entry></vector></translation></model>
+<model id="Tree1_01" key="Models/Trees/1-1/tree-1.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94606</entry><entry>-30.40912</entry><entry>-0.048946854</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-5.3924637</entry><entry>0.1501292</entry><entry>881.0816</entry></vector></translation></model>
+<model id="Tree1_02" key="Models/Trees/1-1/tree-1.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94607</entry><entry>-11.027538</entry><entry>-0.04894856</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-23.448042</entry><entry>0.15012878</entry><entry>757.8994</entry></vector></translation></model>
+<model id="Tree2_01" key="Models/Trees/2-2/tree-2.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94597</entry><entry>7.3301024</entry><entry>-0.048936173</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-30.088623</entry><entry>0.15015246</entry><entry>725.7163</entry></vector></translation></model>
+<model id="Tree3_01" key="Models/Trees/3-3/tree-3.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94605</entry><entry>8.301782</entry><entry>-0.04895623</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-32.443935</entry><entry>0.15013269</entry><entry>689.9653</entry></vector></translation></model>
+<model id="Tree4_01" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.946075</entry><entry>-5.7048855</entry><entry>-0.050350882</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-26.0345</entry><entry>0.15012018</entry><entry>657.00256</entry></vector></translation></model>
+<model id="Tree2_02" key="Models/Trees/2-2/tree-2.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94608</entry><entry>80.46252</entry><entry>-0.04895197</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-106.59177</entry><entry>0.15012497</entry><entry>-12.825147</entry></vector></translation></model>
+<model id="Tree3_02" key="Models/Trees/3-3/tree-3.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94799</entry><entry>86.015</entry><entry>-0.048969038</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-156.1689</entry><entry>0.14960156</entry><entry>-16.210133</entry></vector></translation></model>
+<model id="Tree4_02" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94803</entry><entry>86.015915</entry><entry>-0.04897587</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-192.07028</entry><entry>0.14959428</entry><entry>-18.710283</entry></vector></translation></model>
+<model id="Tree4_03" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94606</entry><entry>86.02461</entry><entry>-0.048994657</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-213.07274</entry><entry>0.15012974</entry><entry>-20.168941</entry></vector></translation></model>
+<model id="Tree5_01" key="Models/Trees/5-5/tree-5.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.948364</entry><entry>86.04248</entry><entry>-0.048957087</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-230.88152</entry><entry>0.14950806</entry><entry>-21.398468</entry></vector></translation></model>
+<model id="Tree5_02" key="Models/Trees/5-5/tree-5.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.93246</entry><entry>86.00466</entry><entry>-0.048774384</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-249.85149</entry><entry>0.15367241</entry><entry>-22.724306</entry></vector></translation></model>
+<model id="Tree5_03" key="Models/Trees/5-5/tree-5.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94109</entry><entry>85.97219</entry><entry>-0.048829027</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-271.81296</entry><entry>0.15141302</entry><entry>-24.272293</entry></vector></translation></model>
+<model id="Tree2_03" key="Models/Trees/2-2/tree-2.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94605</entry><entry>93.401566</entry><entry>-0.048984405</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-393.61298</entry><entry>0.15013154</entry><entry>-19.694202</entry></vector></translation></model>
+<model id="Tree2_04" key="Models/Trees/2-2/tree-2.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94606</entry><entry>88.9091</entry><entry>-0.04897246</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-410.80725</entry><entry>0.15012987</entry><entry>-20.650532</entry></vector></translation></model>
+<model id="Tree3_03" key="Models/Trees/3-3/tree-3.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94606</entry><entry>87.38972</entry><entry>-0.048967343</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-422.67148</entry><entry>0.15012884</entry><entry>-21.542973</entry></vector></translation></model>
+<model id="Tree3_04" key="Models/Trees/3-3/tree-3.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.93839</entry><entry>81.70386</entry><entry>-0.04883415</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-435.81006</entry><entry>0.15210648</entry><entry>-24.834122</entry></vector></translation></model>
+<model id="Tree3_05" key="Models/Trees/3-3/tree-3.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94607</entry><entry>78.02272</entry><entry>-0.04896905</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-451.42938</entry><entry>0.15012847</entry><entry>-28.524134</entry></vector></translation></model>
+<model id="Tree4_04" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94607</entry><entry>78.03396</entry><entry>-0.0489588</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-460.48978</entry><entry>0.15012819</entry><entry>-30.44197</entry></vector></translation></model>
+<model id="Tree4_05" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94619</entry><entry>69.60111</entry><entry>-0.04950863</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-469.89206</entry><entry>0.15009503</entry><entry>-35.654995</entry></vector></translation></model>
+<model id="Tree4_06" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.946</entry><entry>64.57339</entry><entry>-0.050200187</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-483.6897</entry><entry>0.1501381</entry><entry>-42.541958</entry></vector></translation></model>
+<model id="Tree5_04" key="Models/Trees/5-5/tree-5.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94605</entry><entry>67.60966</entry><entry>-0.048152838</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-500.0793</entry><entry>0.15013193</entry><entry>-49.209362</entry></vector></translation></model>
+<model id="Tree5_05" key="Models/Trees/5-5/tree-5.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94601</entry><entry>70.28127</entry><entry>-0.048965633</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-514.8016</entry><entry>0.15014371</entry><entry>-54.05523</entry></vector></translation></model>
+
+		
+
+<model id="Tree2_1" key="Models/Trees/2-2/tree-2.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.946075</entry><entry>-175.7796</entry><entry>-0.048669156</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-1005.73773</entry><entry>0.15012674</entry><entry>498.0666</entry></vector></translation></model>
+<model id="Tree2_2" key="Models/Trees/2-2/tree-2.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94198</entry><entry>-178.44736</entry><entry>-0.04896136</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-1005.8264</entry><entry>0.15118852</entry><entry>532.65393</entry></vector></translation></model>
+<model id="Tree2_3" key="Models/Trees/2-2/tree-2.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.057594</entry><entry>0.71738607</entry><entry>0.048879318</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-1005.736</entry><entry>0.1510816</entry><entry>549.9181</entry></vector></translation></model>
+<model id="Tree2_4" key="Models/Trees/2-2/tree-2.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.05821</entry><entry>-0.5108083</entry><entry>0.04900456</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-1005.10443</entry><entry>0.15124096</entry><entry>584.9411</entry></vector></translation></model>
+<model id="Tree2_5" key="Models/Trees/2-2/tree-2.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.05747</entry><entry>-1.3629596</entry><entry>0.049007352</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-1005.8257</entry><entry>0.15104948</entry><entry>610.4784</entry></vector></translation></model>
+<model id="Tree3_1" key="Models/Trees/3-3/tree-3.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94265</entry><entry>179.92703</entry><entry>-0.04889492</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-965.33545</entry><entry>0.1510128</entry><entry>399.93237</entry></vector></translation></model>
+<model id="Tree4_1" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94257</entry><entry>-179.2373</entry><entry>-0.048859976</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-964.5665</entry><entry>0.15103233</entry><entry>444.94305</entry></vector></translation></model>
+<model id="Tree4_2" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.98641</entry><entry>-60.075474</entry><entry>0.074361995</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-964.72144</entry><entry>0.15108156</entry><entry>489.67157</entry></vector></translation></model>
+<model id="Tree4_3" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.98631</entry><entry>-60.931404</entry><entry>0.07430735</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-965.46796</entry><entry>0.15105684</entry><entry>523.4892</entry></vector></translation></model>
+<model id="Tree3_2" key="Models/Trees/3-3/tree-3.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94165</entry><entry>179.99301</entry><entry>-0.04896073</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-965.33545</entry><entry>0.1512745</entry><entry>472.5597</entry></vector></translation></model>
+<model id="Tree3_3" key="Models/Trees/3-3/tree-3.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94174</entry><entry>179.99272</entry><entry>-0.048911363</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-965.33545</entry><entry>0.15124938</entry><entry>415.93</entry></vector></translation></model>
+<model id="Tree3_4" key="Models/Trees/3-3/tree-3.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.925865</entry><entry>-149.99982</entry><entry>-0.013673183</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-965.33545</entry><entry>0.15101744</entry><entry>401.67587</entry></vector></translation></model>
+<model id="Tree3_5" key="Models/Trees/3-3/tree-3.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.928955</entry><entry>-117.86565</entry><entry>0.025322922</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-965.33545</entry><entry>0.15103798</entry><entry>385.68808</entry></vector></translation></model>
+<model id="Tree3_6" key="Models/Trees/3-3/tree-3.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.925095</entry><entry>-148.55838</entry><entry>-0.013231783</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-965.33545</entry><entry>0.15124613</entry><entry>370.84326</entry></vector></translation></model>
+<model id="Tree3_7" key="Models/Trees/3-3/tree-3.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.97401</entry><entry>151.44138</entry><entry>-0.071428426</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-965.33545</entry><entry>0.15124156</entry><entry>353.3672</entry></vector></translation></model>
+<model id="Tree3_8" key="Models/Trees/3-3/tree-3.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.04888</entry><entry>91.44814</entry><entry>-0.058101006</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-965.33545</entry><entry>0.15121044</entry><entry>342.26187</entry></vector></translation></model>
+<model id="Tree4_4" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94198</entry><entry>-178.53944</entry><entry>-0.0489477</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-965.33545</entry><entry>0.1511872</entry><entry>320.47397</entry></vector></translation></model>
+<model id="Tree4_5" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.01332</entry><entry>121.46734</entry><entry>-0.07473253</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-965.33545</entry><entry>0.15119864</entry><entry>296.57846</entry></vector></translation></model>
+<model id="Tree4_6" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.04888</entry><entry>91.473785</entry><entry>-0.05733091</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-965.33545</entry><entry>0.15100813</entry><entry>270.85358</entry></vector></translation></model>
+<model id="Tree4_7" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.04907</entry><entry>91.47698</entry><entry>-0.05358455</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-965.33545</entry><entry>0.1499792</entry><entry>251.29077</entry></vector></translation></model>
+<model id="Tree4_8" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.02599</entry><entry>-27.305162</entry><entry>0.071496725</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-965.33545</entry><entry>0.15125288</entry><entry>231.03041</entry></vector></translation></model>
+<model id="Tree4_9" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.02521</entry><entry>-28.87477</entry><entry>0.07104594</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-965.33545</entry><entry>0.15101694</entry><entry>205.6656</entry></vector></translation></model>
+<model id="Tree4_10" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.98673</entry><entry>-59.890285</entry><entry>0.074983545</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-965.33545</entry><entry>0.15126687</entry><entry>194.50946</entry></vector></translation></model>
+<model id="Tree4_11" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.92856</entry><entry>-118.75903</entry><entry>0.025947891</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-965.33545</entry><entry>0.15123427</entry><entry>172.57901</entry></vector></translation></model>
+<model id="Tree4_12" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.92522</entry><entry>-148.75017</entry><entry>-0.0132813025</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-965.33545</entry><entry>0.15121579</entry><entry>153.40971</entry></vector></translation></model>
+<model id="Tree1_1" key="Models/Trees/1-1/tree-1.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.04893</entry><entry>0.001187393</entry><entry>-0.058207743</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-493.769</entry><entry>0.15123822</entry><entry>-11.7843666</entry></vector></translation></model>
+<model id="Tree1_2" key="Models/Trees/1-1/tree-1.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.07492</entry><entry>-59.998558</entry><entry>0.013240321</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-511.46066</entry><entry>0.15125509</entry><entry>-11.818773</entry></vector></translation></model>
+<model id="Tree1_3" key="Models/Trees/2-2/tree-2.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94182</entry><entry>90.002144</entry><entry>-0.048936605</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-523.1296</entry><entry>0.1512298</entry><entry>-11.8424416</entry></vector></translation></model>
+<model id="Tree1_4" key="Models/Trees/2-2/tree-2.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.07103</entry><entry>-30.006952</entry><entry>-0.025175221</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-533.00806</entry><entry>0.15100642</entry><entry>-11.856177</entry></vector></translation></model>
+<model id="Tree1_5" key="Models/Trees/2-2/tree-2.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.07481</entry><entry>-60.013523</entry><entry>0.013308623</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-546.4057</entry><entry>0.15122181</entry><entry>-13.8885546</entry></vector></translation></model>
+<model id="Tree1_6" key="Models/Trees/3-3/tree-3.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94245</entry><entry>91.068665</entry><entry>-0.048934888</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-558.05334</entry><entry>0.15106437</entry><entry>-14.4642067</entry></vector></translation></model>
+<model id="Tree1_7" key="Models/Trees/3-3/tree-3.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.01324</entry><entry>31.062077</entry><entry>-0.07493742</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-571.36224</entry><entry>0.15125602</entry><entry>-13.2447376</entry></vector></translation></model>
+<model id="Tree1_8" key="Models/Trees/3-3/tree-3.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.07147</entry><entry>-28.952065</entry><entry>-0.025941912</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-582.7324</entry><entry>0.15123875</entry><entry>-14.0607085</entry></vector></translation></model>
+<model id="Tree1_9" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.01334</entry><entry>33.40839</entry><entry>-0.0747257</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-595.1884</entry><entry>0.15119316</entry><entry>-13.7933946</entry></vector></translation></model>
+<model id="Tree1_10" key="Models/Trees/4-4/tree-4.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.04893</entry><entry>3.4852483</entry><entry>-0.057669327</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-609.26215</entry><entry>0.15109704</entry><entry>-14.9622407</entry></vector></translation></model>
+<model id="Tree1_11" key="Models/Trees/5-5/tree-5.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.941925</entry><entry>91.23443</entry><entry>-0.0489366</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-624.13635</entry><entry>0.1512028</entry><entry>-13.9351323</entry></vector></translation></model>
+<model id="Tree1_12" key="Models/Trees/5-5/tree-5.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.01357</entry><entry>31.235321</entry><entry>-0.07435004</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-637.99243</entry><entry>0.15107894</entry><entry>-14.6664469</entry></vector></translation></model>
+<model id="Tree1_13" key="Models/Trees/5-5/tree-5.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.04892</entry><entry>1.2283685</entry><entry>-0.058256947</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-652.2995</entry><entry>0.15125045</entry><entry>-15.3898369</entry></vector></translation></model>
+<model id="Tree1_14" key="Models/Trees/5-5/tree-5.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.074196</entry><entry>-62.38838</entry><entry>0.013670621</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-665.3806</entry><entry>0.15103355</entry><entry>-15.5831838</entry></vector></translation></model>
+<model id="Tree1_15" key="Models/Trees/1-1/tree-1.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.013626</entry><entry>27.315443</entry><entry>-0.07426381</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-686.57214</entry><entry>0.15105143</entry><entry>-18.1073594</entry></vector></translation></model>
+<model id="Tree1_16" key="Models/Trees/1-1/tree-1.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.04893</entry><entry>-3.6541374</entry><entry>-0.057618205</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-706.12524</entry><entry>0.15108384</entry><entry>-18.2699833</entry></vector></translation></model>
+<model id="Tree1_17" key="Models/Trees/5-5/tree-5.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.94263</entry><entry>89.29941</entry><entry>-0.04893319</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-725.22125</entry><entry>0.15101825</entry><entry>-16.2191925</entry></vector></translation></model>
+<model id="Tree1_18" key="Models/Trees/5-5/tree-5.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.013374</entry><entry>29.511118</entry><entry>-0.07468814</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-740.1464</entry><entry>0.15118214</entry><entry>-14.644058</entry></vector></translation></model>
+<model id="Tree1_19" key="Models/Trees/5-5/tree-5.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.04892</entry><entry>-0.77986836</entry><entry>-0.057320166</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-757.26886</entry><entry>0.15100648</entry><entry>-14.6934714</entry></vector></translation></model>
+<model id="Tree1_20" key="Models/Trees/5-5/tree-5.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.07429</entry><entry>-62.219215</entry><entry>0.013617689</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-765.8255</entry><entry>0.15106192</entry><entry>-14.3329115</entry></vector></translation></model>
+<model id="Tree1_21" key="Models/Trees/5-5/tree-5.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.98628</entry><entry>-148.35782</entry><entry>0.074138306</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-780.7119</entry><entry>0.15101641</entry><entry>-14.914609</entry></vector></translation></model>
+<model id="Tree1_22" key="Models/Trees/5-5/tree-5.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.986664</entry><entry>-150.6583</entry><entry>0.07479657</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-795.36646</entry><entry>0.15121399</entry><entry>-14.4068508</entry></vector></translation></model>
+<model id="Tree1_23" key="Models/Trees/5-5/tree-5.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-90.02594</entry><entry>-119.78731</entry><entry>0.071484774</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-814.9162</entry><entry>0.15124154</entry><entry>-12.243884</entry></vector></translation></model>
+<model id="Tree1_24" key="Models/Trees/5-5/tree-5.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.986725</entry><entry>-149.1736</entry><entry>0.074891336</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-834.77026</entry><entry>0.15124337</entry><entry>-12.1288426</entry></vector></translation></model>
+<model id="Tree1_25" key="Models/Trees/5-5/tree-5.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.98675</entry><entry>-147.4293</entry><entry>0.07491865</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-853.20886</entry><entry>0.1512515</entry><entry>-12.4941154</entry></vector></translation></model>
+<model id="Tree1_26" key="Models/Trees/5-5/tree-5.scene" ref=""><mass>0</mass><visible>true</visible><collisionShape>meshShape</collisionShape><scale><vector jtype="java_lang_Float" size="3"><entry>0.3</entry><entry>0.3</entry><entry>0.3</entry></vector></scale><rotation quaternion="false"><vector jtype="java_lang_Float" size="3"><entry>-89.9863</entry><entry>-148.96585</entry><entry>0.07414856</entry></vector></rotation><translation><vector jtype="java_lang_Float" size="3"><entry>-869.91724</entry><entry>0.15101889</entry><entry>-12.3743249</entry></vector></translation></model>
+		
+		
+
+	</models>
+
+	<geometries>
+		<box id="box">
+			<width>3</width>
+			<depth>1</depth>
+			<height>0.1</height>
+		</box>
+	</geometries>
+
+
+
+	<gravity>9.81</gravity>
+
+	<time>19:00:12</time>
+
+	<date>2010-11-25</date>
+
+	<lights>
+		<directionalLight>
+			<direction>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0.5</entry>
+					<entry>-0.5</entry>
+					<entry>0.5</entry>
+				</vector>
+			</direction>
+			<color>
+				<vector jtype="java_lang_Float" size="4">
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+				</vector>
+			</color>
+		</directionalLight>
+		<directionalLight>
+			<direction>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-0.5</entry>
+					<entry>-0.5</entry>
+					<entry>0.5</entry>
+				</vector>
+			</direction>
+			<color>
+				<vector jtype="java_lang_Float" size="4">
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+				</vector>
+			</color>
+		</directionalLight>
+		<directionalLight>
+			<direction>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0.5</entry>
+					<entry>-0.5</entry>
+					<entry>-0.5</entry>
+				</vector>
+			</direction>
+			<color>
+				<vector jtype="java_lang_Float" size="4">
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+				</vector>
+			</color>
+		</directionalLight>
+		<directionalLight>
+			<direction>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-0.5</entry>
+					<entry>-0.5</entry>
+					<entry>-0.5</entry>
+				</vector>
+			</direction>
+			<color>
+				<vector jtype="java_lang_Float" size="4">
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+				</vector>
+			</color>
+		</directionalLight>
+	</lights>
+	<skyTexture>Textures/Sky/Clouds/clouds.properties</skyTexture>
+</scene>

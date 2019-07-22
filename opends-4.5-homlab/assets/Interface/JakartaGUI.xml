@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nifty xmlns="http://nifty-gui.sourceforge.net/nifty-1.3.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://nifty-gui.sourceforge.net/nifty-1.3.xsd http://nifty-gui.sourceforge.net/nifty-1.3.xsd">
+	<!-- +++++++++++++++++++++++++++++++++++++++ -->
+	<!-- load default styles and controls -->
+	<!-- +++++++++++++++++++++++++++++++++++++++ -->
+	<useStyles filename="nifty-default-styles.xml" />
+	<useControls filename="nifty-default-controls.xml" />
+	
+	<style id="console-red" base="button-font">
+    	<attributes font="fonts/menu.fnt" color="#f00f"/>
+  	</style>
+  	<style id="console-white" base="button-font">
+    	<attributes font="fonts/menu.fnt" color="#ffff"/>
+  	</style>
+  	<style id="console-font">
+    	<attributes font="fonts/verdana-48-regular.fnt" color="#00ff"/>
+  	</style>
+	
+    <screen id="start" controller="eu.opends.niftyGui.JakartaGUIController">
+    	<layer id="backLayer" childLayout="vertical" backgroundColor="#ffffff00">
+			<panel childLayout="center" align="center" width="100%" height="100%">
+				<control name="label" id="loadingLabel" text="Loading..." color="#00000000"
+							align="center" valign="center" font="Interface/Fonts/Arial32px.fnt" height="50px" >
+					<effect>
+						  <onEndScreen name="colorPulsate" startColor="#ffffffff" endColor="#000000ff" 
+							pulsateType="sin" period="1000" cycle="true"/>
+					</effect>
+				</control>
+			</panel>
+		</layer>
+	    <layer id="GLayer_jgui_main" childLayout="absolute" style="nifty-style-black">
+			<image id="GImage_jgui_bg" filename="Interface/j_gui_pics/background_ikt_1.png" backgroundColor="#00000000" align="center" valign="center" x="0%" y="0%" height="100%" width="100%"/>
+			<image id="GImage_jgui_bg" filename="Interface/j_gui_pics/openDS_logo_grau_1.png" backgroundColor="#00000000" align="center" valign="center" x="80%" y="1.5%" height="10%" width="17%"/>
+			<image id="GImage_jgui_bg" filename="Interface/j_gui_pics/dfki_logo_grau_1.png" backgroundColor="#00000000" align="center" valign="center" x="81%" y="12.5%" height="7%" width="15%"/>
+		    <effect>
+				<onStartScreen name="move" timeType="exp" factor="3.5" direction="top" mode="in" length="500" inherit="true" />
+				<onEndScreen name="move" timeType="exp" factor="3.5" direction="top" mode="out" length="500" inherit="true" />
+			</effect>
+			<panel id="GPanel_jgui_tab_buttons" childLayout="absolute" backgroundColor="#00000000" x="0%" y="10%" height="10%" width="100%">
+				<control name="button" id="GButton_jgui_tab_overview" childLayout="center" x="0%" y="0%" label="Overview" height="100%" width="15%">
+					<interact onClick="clickOverviewButton()"/>
+				</control>
+				<control name="button" id="GButton_jgui_tab_car" childLayout="center" x="15%" y="0%" label="Car" height="100%" width="15%">
+					<interact onClick="clickCarButton()"/>
+				</control>
+				<control name="button" id="GButton_jgui_tab_scene" childLayout="center" x="30%" y="0%" label="Scene" height="100%" width="15%">
+					<interact onClick="clickSceneButton()"/>
+				</control>
+				<control name="button" id="GButton_jgui_tab_env" childLayout="center" x="45%" y="0%" label="Environment" height="100%" width="15%">
+					<interact onClick="clickEnvButton()"/>
+				</control>
+				<control name="button" id="GButton_jgui_tab_reports" childLayout="center" x="60%" y="0%" label="Reports" height="100%" width="15%">
+					<interact onClick="clickReportsButton()"/>
+				</control>
+			</panel>
+					
+			<panel name="GPanel" id="tab1_jgui_overview" childLayout="absolute" backgroundColor="#00000093" x="0%" y="20%" height="70%" width="85%">
+				<panel id="GPanel_jgui_overview_1" childLayout="absolute" backgroundColor="#00000000" x="5%" y="5%" height="90%" width="90%">
+					<control name="label" id="GLabel_jgui_overview_driver_l" text="Driver" font="Interface/Fonts/Arial24px.fnt" align="center" textHAlign="left" x="0%" y="5%" height="10%" width="10%"/>
+					<control name="label" id="GLabel_jgui_overview_driver" text="" font="Interface/Fonts/Arial24px.fnt" align="center" x="10%" y="5%" height="10%" width="35%"/>
+						
+					<control name="label" id="GLabel_jgui_overview_car_l" text="Car" align="center" textHAlign="left" font="Interface/Fonts/Arial24px.fnt" x="0%" y="20%" height="10%" width="10%"/>
+					<control name="label" id="GLabel_jgui_overview_car" text="" align="center" font="Interface/Fonts/Arial24px.fnt" x="10%" y="20%" height="10%" width="35%"/>
+						
+					<image id="GImage_jgui_overview_car" filename="Interface/j_gui_pics/no_image.png" align="center" valign="center" x="10%" y="35%" height="40%" width="35%"/>
+						
+					<control name="label" id="GLabel_jgui_overview_steering_l" text="Steering" align="center" textHAlign="left" font="Interface/Fonts/Arial24px.fnt" x="0%" y="80%" height="10%" width="10%"/>
+					<control name="label" id="GLabel_jgui_overview_steering" text="Right-Handed" align="center" font="Interface/Fonts/Arial24px.fnt" x="10%" y="80%" height="10%" width="35%"/>
+						
+					<control name="label" id="GLabel_jgui_overview_task_l" text="Task" align="center" textHAlign="left" font="Interface/Fonts/Arial24px.fnt" x="50%" y="35%" height="10%" width="10%"/>						
+					<image id="GImage_jgui_task" filename="Interface/j_gui_pics/no_image.png" x="60%" y="35%" valign="center" align="center" height="40%" width="35%"/>
+						
+					<control name="label" id="GLabel_jgui_overview_weather_l" text="Weather" align="center" textHAlign="right" font="Interface/Fonts/Arial24px.fnt" x="90%" y="5%" height="10%" width="10%"/>
+					<image id="GImage_jgui_weather_daytime" filename="Interface/j_gui_pics/no_image.png" valign="center" align="center" x="70%" y="15%" height="10%" width="10%"/>
+					<image id="GImage_jgui_weather_rain" filename="Interface/j_gui_pics/no_image.png" valign="center" align="center" x="70%" y="15%" height="10%" width="10%"/>
+						
+					<control name="label" id="GLabel_jgui_overview_task" text="" align="center" font="Interface/Fonts/Arial24px.fnt" x="60%" y="50%" height="10%" width="35%"/>
+						
+				</panel>
+			</panel>
+				
+			<panel name="GPanel" id="tab2_jgui_car" childLayout="absolute"  backgroundColor="#00000093" x="0%" y="20%" height="70%" width="85%">
+				<panel id="GPanel_jgui_car_1" childLayout="absolute" backgroundColor="#00000000" x="5%" y="5%" height="90%" width="90%">
+					<control name="label" id="GLabel_jgui_car_car_l" text="Car" align="center" textHAlign="left" font="Interface/Fonts/Arial24px.fnt" x="0%" y="5%" height="10%" width="10%"/>
+					<control name="dropDown" id="GDropDown_jgui_car_car" x="10%" y="7.5%" height="10%" width="35%"/>
+            			
+					<image id="GImage_jgui_car_car" filename="Interface/j_gui_pics/no_image.png" align="center" valign="center" x="10%" y="20%" height="40%" width="35%"/>
+
+					<control name="horizontalSlider" id="GHorizontalSlider_jgui_car_pic" max="8.0" min="1.0" buttonStepSize="1.0" x="15%" y="55%" height="5%" width="25%"/>
+						
+					<control name="label" id="GLabel_jgui_car_steering_l" text="Steering" align="center" textHAlign="left" font="Interface/Fonts/Arial24px.fnt" x="0%" y="65%" height="10%" width="10%"/>
+					<control name="dropDown" id="GDropDown_jgui_car_steering" displayItems="2" x="10%" y="67.5%" height="10%" width="35%"/>
+												
+				</panel>
+			</panel>
+				
+			<panel name="GPanel" id="tab3_jgui_scene" childLayout="absolute"  backgroundColor="#00000093" x="0%" y="20%" height="70%" width="85%">
+				<panel id="GPanel_jgui_scene_1" childLayout="absolute" backgroundColor="#00000000" x="5%" y="5%" height="90%" width="90%">
+					<control name="label" id="GLabel_jgui_scene_task_l" text="Task" align="center" textHAlign="left" font="Interface/Fonts/Arial24px.fnt" x="0%" y="5%" height="10%" width="10%"/>
+					<control name="dropDown" id="GDropDown_jgui_scene_task" displayItems="10" x="10%" y="7.5%" height="10%" width="35%"/>
+					
+					<image id="GImage_jgui_task" filename="Interface/j_gui_pics/no_image.png" align="center" valign="center" x="10%" y="20%" height="40%" width="35%" visible="false"/>
+											
+				</panel>
+			</panel>
+				
+			<panel name="GPanel" id="tab4_jgui_environment" childLayout="absolute"  backgroundColor="#00000093" x="0%" y="20%" height="70%" width="85%">
+				<panel id="GPanel_jgui_env_1" childLayout="absolute" backgroundColor="#00000000" x="5%" y="5%" height="90%" width="90%">
+					<control name="label" id="GLabel_jgui_env_daytime_l" text="Daytime" align="center" textHAlign="left" font="Interface/Fonts/Arial24px.fnt" x="0%" y="5%" height="10%" width="10%"/>
+					<control name="dropDown" id="GDropDown_jgui_env_daytime" displayItems="2" x="10%" y="7.5%" height="10%" width="35%"/>
+						
+					<control name="label" id="GLabel_jgui_env_rain_l" text="Rain" align="center" textHAlign="left" font="Interface/Fonts/Arial24px.fnt" x="0%" y="20%" height="10%" width="10%"/>
+					<control name="horizontalSlider" id="GHorizontalSlider_jgui_env_rain" max="3.0" buttonStepSize="1.0" x="10%" y="22.5%" height="10%" width="35%"/>
+							
+					<image id="GImage_jgui_env_daytime" filename="Interface/j_gui_pics/no_image_pic.png" valign="center" align="center" x="70%" y="15%" height="10%" width="10%"/>
+					<image id="GImage_jgui_env_rain" filename="Interface/j_gui_pics/no_image.png" valign="center" align="center" x="70%" y="15%" height="10%" width="10%"/>
+											
+				</panel>
+			</panel>
+                
+			<panel name="GPanel" id="tab5_jgui_reports" childLayout="absolute"  backgroundColor="#00000093" x="0%" y="20%" height="70%" width="85%">
+				<panel id="GPanel_jgui_reports_1" childLayout="absolute" backgroundColor="#00000000" x="5%" y="5%" height="90%" width="90%">
+					<control name="label" id="GLabel_jgui_reports_driver_l" text="Driver" align="center" textHAlign="left" font="Interface/Fonts/Arial24px.fnt" x="0%" y="5%" height="10%" width="10%"/>
+					<control name="textfield" id="GTextfield_jgui_reports_driver" font="aurulent-sans-16.fnt" x="10%" y="7.5%" height="5%" width="35%"/>
+						
+					<control name="label" id="GLabel_jgui_reports_recvideo_l" text="Video" align="center" textHAlign="left" font="Interface/Fonts/Arial24px.fnt" x="0%" y="20%" height="10%" width="15%"/>
+					<control name="checkbox" id="GCheckbox_jgui_reports_recvideo" x="42.5%" y="22.5%"/>
+						
+					<!--
+					<control name="label" id="GLabel_jgui_reports_takescreen_l" text="Screenshot" align="center" textHAlign="left" font="Interface/Fonts/Arial24px.fnt" x="0%" y="35%" height="10%" width="15%" visible="false"/>
+					<control name="checkbox" id="GCheckbox_jgui_reports_takescreen" x="42.5%" y="37.5%" visible="false"/>
+					-->						
+				</panel>
+			</panel>
+				
+            <control name="button" id="GButton_start" childLayout="center" x="85%" y="90%" label="Start" height="10%" width="15%">
+            	<interact onClick="clickStartButton()"/>
+            </control>
+        </layer>
+    </screen>
+    
+    <popup id="errorPopup" childLayout="center" backgroundColor="#0008">
+		<panel childLayout="vertical" style="nifty-panel-red" width="350px" height="150px" valign="center" align="center">
+			<panel childLayout="center" height="25px"/>
+			<panel childLayout="vertical" height="40px" valign="center">
+				<control name="label" id="errorMessageText" text="The selected file is an invalid driving task!" 
+					width="100%" heigth="100%" color="#ffffffff" textHAlign="center"/>
+			</panel>
+			<panel childLayout="vertical" height="80px" width="100%" align="center">
+				<control id="closeButton" name="button" label="Close"
+					align="center" height="30px">
+					<interact onClick="clickCloseButton()" />
+				</control>
+			</panel>
+		</panel>
+	</popup>
+	
+</nifty>
