@@ -164,6 +164,38 @@ public class TrafficLightCenter
 		}
 	}
 
+
+	public void reportCollision1(String trafficLightName, TriggerType type)
+	{
+		if((mode == TrafficLightMode.TRIGGER) && (type == TriggerType.REQUEST))
+		{
+			TrafficLight trafficLight = getTrafficLightByName(trafficLightName);
+			
+			for(TrafficLightInternalProgram trafficLightInternalProgram : trafficLightProgramList)
+			{
+				if(trafficLightInternalProgram.getIntersectionID().equals(trafficLight.getIntersectionID()))				
+					trafficLightInternalProgram.setGreen(trafficLight);					
+			}
+		}
+	}
+		
+	////////////////////////////////////requestRed
+	public void reportCollisionOff(String trafficLightName, TriggerType type)
+	{
+		if((mode == TrafficLightMode.TRIGGER) && (type == TriggerType.REQUEST))
+		{
+			TrafficLight trafficLight = getTrafficLightByName(trafficLightName);
+			for(TrafficLightInternalProgram trafficLightInternalProgram : trafficLightProgramList)
+			{
+				if(trafficLightInternalProgram.getIntersectionID().equals(trafficLight.getIntersectionID()))
+				{
+					//trafficLightInternalProgram.requestRed(trafficLight);//requestGreenBlink
+					trafficLightInternalProgram.requestGreenBlink(trafficLight);
+				}
+			}
+		}
+		
+	}
 	
 	/**
 	 * Returns current mode of traffic light center

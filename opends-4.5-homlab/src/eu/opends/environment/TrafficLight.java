@@ -405,11 +405,11 @@ public class TrafficLight
 		triggerBox.setMaterial(mat);
 		
 		// set relative position of trigger to the traffic light
-		if(direction == TrafficLightDirection.LEFT || direction == TrafficLightDirection.UP)
-			relativePos = new Vector3f(-4f, 1.5f, 12f);
-		else
-			relativePos = new Vector3f(-2.7f, 1.5f, 12f);
-		triggerBox.setLocalTranslation(relativePos);
+//		if(direction == TrafficLightDirection.LEFT || direction == TrafficLightDirection.UP)
+//			relativePos = new Vector3f(-4f, 1.5f, 12f);
+//		else
+//			relativePos = new Vector3f(-2.7f, 1.5f, 12f);
+//		triggerBox.setLocalTranslation(relativePos);
 
 		// set properties of trigger
 		triggerBox.setModelBound(new BoundingBox());
@@ -456,11 +456,11 @@ public class TrafficLight
 		triggerBox.setMaterial(mat);
 		
 		// set relative position of trigger to the traffic light
-		if(direction == TrafficLightDirection.LEFT || direction == TrafficLightDirection.UP)
-			relativePos = new Vector3f(-4f, 1.5f, 60f);
-		else
-			relativePos = new Vector3f(-2.7f, 1.5f, 60f);
-		triggerBox.setLocalTranslation(relativePos);
+//		if(direction == TrafficLightDirection.LEFT || direction == TrafficLightDirection.UP)
+//			relativePos = new Vector3f(-4f, 1.5f, 60f);
+//		else
+//			relativePos = new Vector3f(-2.7f, 1.5f, 60f);
+//		triggerBox.setLocalTranslation(relativePos);
 				
 		// set properties of trigger
 		triggerBox.setModelBound(new BoundingBox());

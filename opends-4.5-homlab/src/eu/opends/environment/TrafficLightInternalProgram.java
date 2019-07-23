@@ -55,6 +55,19 @@ public class TrafficLightInternalProgram extends Thread
 	private long timeOfLastBlink = 0;
 	private int blinkingIntervall = 1000;
 
+	public synchronized void requestRed(TrafficLight trafficLight)
+	{
+		if(trafficLight.getState()!= TrafficLightState.RED)
+			trafficLight.setState(TrafficLightState.RED);
+	}
+	public synchronized void requestGreenBlink(TrafficLight trafficLight)
+	{
+//		if(trafficLight.getState() == TrafficLightState.OFF)
+//			trafficLight.setState(TrafficLightState.GREEN);
+//		else
+			trafficLight.setState(TrafficLightState.OFF);
+	}
+	
 	
 	/**
 	 * Creates a new traffic light program and initializes it by setting the 
@@ -142,7 +155,15 @@ public class TrafficLightInternalProgram extends Thread
 		if(!trafficLightsListForGreen.contains(trafficLight))
 			trafficLightsListForGreen.add(trafficLight);
 	}
+
 	
+	public synchronized void setGreen(TrafficLight trafficLight)
+	{
+//		if(!trafficLightsListForGreen.contains(trafficLight))
+//			trafficLightsListForGreen.add(trafficLight);
+		trafficLight.setState(TrafficLightState.GREEN);
+	}
+
 
 	/**
 	 * Stops the traffic light program by exiting the loop
@@ -351,11 +372,11 @@ public class TrafficLightInternalProgram extends Thread
 				{
 					// switch selected traffic light to YELLOWRED and wait 1 second
 					trafficLight.setState(TrafficLightState.YELLOWRED);
-					wait(1);
+					wait(2);
 					
 					// switch selected traffic light to GREEN and wait 3 seconds
 					trafficLight.setState(TrafficLightState.GREEN);
-					wait(3);
+					wait(20);
 				}
 			}
 			
@@ -379,6 +400,28 @@ public class TrafficLightInternalProgram extends Thread
 				trafficLight.setState(TrafficLightState.YELLOW);
 			else
 				trafficLight.setState(TrafficLightState.OFF);
+		}
+	}	
+	
+	private void runGreenBlinkingMode() 
+	{
+		for(TrafficLight trafficLight : intersectionTrafficLightsList)
+		{
+			/*if(trafficLight.getState() == TrafficLightState.OFF)
+				trafficLight.setState(TrafficLightState.GREEN);
+			else
+				trafficLight.setState(TrafficLightState.OFF);
+			*/
+			if(trafficLight.getState() == TrafficLightState.GREEN) {
+				trafficLight.setState(TrafficLightState.OFF);
+				wait(1);
+				trafficLight.setState(TrafficLightState.GREEN);
+				wait(1);
+				trafficLight.setState(TrafficLightState.OFF);
+				wait(1);
+				trafficLight.setState(TrafficLightState.GREEN);
+			}
+			
 		}
 	}	
 	
@@ -545,6 +588,7 @@ public class TrafficLightInternalProgram extends Thread
 				}
 				else if(trafficLight.getState() == TrafficLightState.YELLOW)
 				{
+					wait(2);
 					// switch status: YELLOW --> RED
 					trafficLight.setState(TrafficLightState.RED);
 				}

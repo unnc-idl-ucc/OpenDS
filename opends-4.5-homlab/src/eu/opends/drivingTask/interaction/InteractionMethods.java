@@ -45,12 +45,14 @@ import eu.opends.trigger.ReportSpeedTriggerAction;
 import eu.opends.trigger.ReportTextTriggerAction;
 import eu.opends.trigger.ReportTrafficLightTriggerAction;
 import eu.opends.trigger.RequestGreenTrafficLightAction;
+import eu.opends.trigger.RequestOffTrafficLightAction;
 import eu.opends.trigger.ResetCarToResetPointAction;
 import eu.opends.trigger.ResumeTriggerAction;
 import eu.opends.trigger.SendMessageTriggerAction;
 import eu.opends.trigger.SendNumberToParallelPortTriggerAction;
 import eu.opends.trigger.SetAutoPilotTriggerAction;
 import eu.opends.trigger.SetCrosswindTriggerAction;
+import eu.opends.trigger.SetGreenTrafficLightAction;
 import eu.opends.trigger.SetMotorwayTaskStimulusTriggerAction;
 import eu.opends.trigger.SetSpeedLimitAction;
 import eu.opends.trigger.SetTVPTStimulusTriggerAction;
@@ -72,6 +74,74 @@ import eu.opends.trigger.WriteToKnowledgeBaseTriggerAction;
  */
 public class InteractionMethods 
 {  
+
+	//////////////////////RequestRed
+	@Action(
+			name = "requestOffTrafficLight",
+			layer = Layer.INTERACTION,
+			description = "Requests a given traffic light to turn red",
+			defaultDelay = 0,
+			defaultRepeat = 0,
+			param = {@Parameter(name="trafficLightID", type="String", defaultValue="TrafficLight10", 
+								description="ID of traffic light to request for red")
+					}
+		)
+	public TriggerAction requestOffTrafficLight(SimulationBasics sim, float delay, int repeat, Properties parameterList)
+	{	
+		String parameter = "";
+		
+		try {
+			
+			// extract ID of traffic light
+			parameter = "trafficLightID";
+			String trafficLightID = parameterList.getProperty(parameter);
+			if(trafficLightID == null)
+				throw new Exception();
+
+			// create RequestOffTrafficLightAction
+			return new RequestOffTrafficLightAction(delay, repeat, (Simulator)sim, trafficLightID);
+			
+		} catch (Exception e) {
+			
+			reportError("requestOffTrafficLight", parameter);
+			return null;
+		}
+	}
+	
+
+
+	@Action(
+			name = "setGreenTrafficLight",
+			layer = Layer.INTERACTION,
+			description = "Sets a given traffic light to turn green",
+			defaultDelay = 0,
+			defaultRepeat = 0,
+			param = {@Parameter(name="trafficLightID", type="String", defaultValue="TrafficLight10", 
+								description="ID of traffic light to request for green")
+					}
+		)
+	public TriggerAction setGreenTrafficLight(SimulationBasics sim, float delay, int repeat, Properties parameterList)
+	{	
+		String parameter = "";
+		
+		try {
+			
+			// extract ID of traffic light
+			parameter = "trafficLightID";
+			String trafficLightID = parameterList.getProperty(parameter);
+			if(trafficLightID == null)
+				throw new Exception();
+
+			// create RequestGreenTrafficLightAction
+			return new SetGreenTrafficLightAction(delay, repeat, (Simulator)sim, trafficLightID);
+			
+		} catch (Exception e) {
+			
+			reportError("requestGreenTrafficLight", parameter);
+			return null;
+		}
+	}
+	
 
 	@Action(
 		name = "sendMessage", 
