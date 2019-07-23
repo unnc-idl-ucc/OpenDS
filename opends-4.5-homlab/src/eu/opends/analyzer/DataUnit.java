@@ -35,31 +35,12 @@ public class DataUnit implements Serializable
 {
 	private static final long serialVersionUID = -8293989514037755782L;
 	private float xpos, ypos, zpos, speed, steeringWheelPos, gasPedalPos, brakePedalPos,
-			xrot, yrot, zrot, wrot, traveledDistance, dts, lateralPos;
+			xrot, yrot, zrot, wrot, traveledDistance, distanceAhead, timeToCollide, headWay, acceleration;
 	private boolean isEngineOn;
+	private Quaternion oculusRiftOrientation;
 	private Date date;
 	
 
-	public float getLateralPos() {
-		return lateralPos;
-	}
-
-
-	public void setLateralPos(float lateralPos) {
-		this.lateralPos = lateralPos;
-	}
-
-
-	public float getDts() {
-		return dts;
-	}
-
-
-	public void setDts(float dts) {
-		this.dts = dts;
-	}
-
-
 	/**
 	 * @param date
 	 * 			The date, when the data set was taken.
@@ -104,7 +85,7 @@ public class DataUnit implements Serializable
 	public DataUnit(Date date, float xpos, float ypos, float zpos,
 			float xrot, float yrot, float zrot, float wrot, float speed,
 			float steeringWheelPos, float gasPedalPos, float brakePedalPos,
-			boolean isEngineOn) 
+			boolean isEngineOn, float distanceAhead, float timeToCollide, float headWay, float acceleration) 
 	{
 		setDate(date);
 		setSpeed(speed);
@@ -119,57 +100,16 @@ public class DataUnit implements Serializable
 		setAcceleratorPedalPos(gasPedalPos);
 		setBrakePedalPos(brakePedalPos);
 		setEngineOn(isEngineOn);
+		setDistanceAhead(distanceAhead);
+		setTimeToCollide(timeToCollide);
+		setHeadWay(headWay);
+		setAcceleration(acceleration);
 	}
 	
-
-	/**
-	 * @param date
-	 * 			The date, when the data set was taken.
-	 * 
-	 * @param xpos
-	 * 			The position of the car on the x axis.
-	 * 
-	 * @param ypos
-	 * 			The position of the car on the y axis.
-	 * 
-	 * @param zpos
-	 * 			The position of the car on the z axis.
-	 * 
-	 * @param xrot
-	 * 			The rotation of the car (x component of quaternion)
-	 * 
-	 * @param yrot
-	 * 			The rotation of the car (y component of quaternion)
-	 * 
-	 * @param zrot
-	 * 			The rotation of the car (z component of quaternion)
-	 * 
-	 * @param wrot
-	 * 			The rotation of the car (w component of quaternion)
-	 * 
-	 * @param speed
-	 * 			The current speed of the car in kilometers per hour.
-	 * 
-	 * @param steeringWheelPos
-	 * 			The position of the steering wheel: -1 full left, 0 centered,
-	 *          1 full right.
-	 *            
-	 * @param gasPedalPos
-	 * 			The position of the gas pedal: 0 no acceleration, 1 full acceleration
-	 * 
-	 * @param brakePedalPos
-	 * 			The position of the brake pedal: -1 full break/negative acceleration, 0 no acceleration
-	 * 
-	 * @param isEngineOn
-	 * 			Engine state
-	 * 
-	 * @param dts
-	 * 			Distance to start
-	 */
 	public DataUnit(Date date, float xpos, float ypos, float zpos,
 			float xrot, float yrot, float zrot, float wrot, float speed,
 			float steeringWheelPos, float gasPedalPos, float brakePedalPos,
-			boolean isEngineOn, float dts, float lateralPos) 
+			boolean isEngineOn,float distanceAhead, float timeToCollide, float headWay, float acceleration, Quaternion oculusRiftOrientation) 
 	{
 		setDate(date);
 		setSpeed(speed);
@@ -184,10 +124,9 @@ public class DataUnit implements Serializable
 		setAcceleratorPedalPos(gasPedalPos);
 		setBrakePedalPos(brakePedalPos);
 		setEngineOn(isEngineOn);
-		setDts(dts);
-		setLateralPos(lateralPos);
+		setAcceleration(acceleration);
+		setOculusRiftOrientation(oculusRiftOrientation);
 	}
-	
 
 	/**
 	 * @param date
@@ -220,7 +159,7 @@ public class DataUnit implements Serializable
 	 */
 	public DataUnit(Date date, Vector3f carPosition, Quaternion carRotation,
 			float speed, float steeringWheelPos, float gasPedalPos, float brakePedalPos,
-			boolean isEngineOn, float traveledDistance) 
+			boolean isEngineOn, float traveledDistance, float distanceAhead, float timeToCollide, float headWay, float acceleration) 
 	{
 		setDate(date);
 		setSpeed(speed);
@@ -231,6 +170,10 @@ public class DataUnit implements Serializable
 		setBrakePedalPos(brakePedalPos);
 		setEngineOn(isEngineOn);
 		setTraveledDistance(traveledDistance);
+		setDistanceAhead(distanceAhead);
+		setTimeToCollide(timeToCollide);
+		setHeadWay(headWay);
+		setAcceleration(acceleration);
 	}
 	
 	
@@ -452,6 +395,53 @@ public class DataUnit implements Serializable
 	}
 
 	
+	private void setDistanceAhead(float dist) {
+		this.distanceAhead = dist;
+	}
+	
+	public float getDistanceAhead() {
+		return distanceAhead;
+	}
+	
+	private void  setTimeToCollide(float t) {
+		this.timeToCollide = t;
+	}
+	
+	public float getTimeToCollide() {
+		return timeToCollide;
+	}
+	
+	private void  setHeadWay(float t) {
+		this.headWay = t;
+	}
+	
+	public float getHeadWay() {
+		return headWay;
+	}
+	public float getAcceleration() {
+		return acceleration;
+	}
+	public void setAcceleration(float acceleration) {
+		this.acceleration = acceleration;
+	}
+	
+	/**
+	 * 
+	 * @return head rotation (when using Oculus Rift)
+	 */
+	public Quaternion getOculusRiftOrientation() {
+		return oculusRiftOrientation;
+	}
+
+	/**
+	 * 
+	 * @param oculusRiftOrientation
+	 *            head rotation (when using Oculus Rift)
+	 */
+	private void setOculusRiftOrientation(Quaternion oculusRiftOrientation) {
+		this.oculusRiftOrientation = oculusRiftOrientation;
+	}
+
 	/**
 	 * 
 	 * @return distance car has traveled since start of recording
@@ -553,15 +543,18 @@ public class DataUnit implements Serializable
 		
 		// pass previous engine state
 		boolean isEngineOn = previousDataUnit.isEngineOn();
-		
-		
+		float distanceAhead = previousDataUnit.getDistanceAhead();
+		float timeToCollide = previousDataUnit.getTimeToCollide();
+		float headWay = previousDataUnit.getHeadWay();
 		// interpolate traveled distance
 		float previousTraveledDistance = previousDataUnit.getTraveledDistance();
 		float nextTraveledDistance = nextDataUnit.getTraveledDistance();
 		float traveledDistanceDiff = nextTraveledDistance - previousTraveledDistance;
-		float traveledDistance = previousTraveledDistance + (traveledDistanceDiff * percentage);		
+		float traveledDistance = previousTraveledDistance + (traveledDistanceDiff * percentage);
 		
+		//just for testing, 99 is incorrect
+		float acceleration = 99;
 		return new DataUnit(date, position, rotation, speed, steeringWheelPos, 
-				gasPedalPos, brakePedalPos, isEngineOn, traveledDistance);
+				gasPedalPos, brakePedalPos, isEngineOn, traveledDistance, distanceAhead, timeToCollide, headWay, acceleration);
 	}
 }

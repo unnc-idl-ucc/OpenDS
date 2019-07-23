@@ -142,9 +142,16 @@ public class DataReader
 				
 				Boolean isEngineOn = parseIsEngineOn(inputLine);
 
+				Float distanceAhead = parceDistanceAhead(inputLine);
+				
+				Float timeToCollide = parceTimeToCollide(inputLine);
+				
+				Float headWay = parceHeadWay(inputLine);
+				
 				DataUnit dataUnit = new DataUnit(new Date(timeStamp), carPosition, carRotation,
 						speed, steeringWheelPosition, acceleratorPedalPosition, brakePedalPosition,
-						isEngineOn, traveledDistance);
+						isEngineOn, traveledDistance, distanceAhead, timeToCollide, headWay, 1f);
+				//1f is incorrect
 				dataUnitList.add(dataUnit);
 				
 				inputLine = inputReader.readLine();
@@ -299,4 +306,20 @@ public class DataReader
 		String[] splittedLineArray = inputLine.split(":");
 		return Boolean.parseBoolean(splittedLineArray[12]);
 	}
+	
+	private Float parceDistanceAhead(String inputLine) {
+		String[] splittedLineArray = inputLine.split(":");
+		return Float.parseFloat(splittedLineArray[13]);
+	}
+	
+	private Float parceTimeToCollide(String inputLine) {
+		String[] splittedLineArray = inputLine.split(":");
+		return Float.parseFloat(splittedLineArray[14]);
+	}
+	
+	private Float parceHeadWay(String inputLine) {
+		String[] splittedLineArray = inputLine.split(":");
+		return Float.parseFloat(splittedLineArray[15]);
+	}
+	
 }
