@@ -38,10 +38,14 @@ import org.apache.log4j.PropertyConfigurator;
 import eu.opends.profiler.BasicProfilerState;
 
 import com.jme3.app.StatsAppState;
+import com.jme3.font.BitmapFont;
+import com.jme3.font.BitmapText;
 //import com.jme3.app.state.VideoRecorderAppState;
 import com.jme3.input.Joystick;
+import com.jme3.math.ColorRGBA;
 import com.jme3.math.Vector3f;
 import com.jme3.niftygui.NiftyJmeDisplay;
+import com.jme3.scene.Node;
 import com.jme3.scene.Spatial.CullHint;
 import com.sun.javafx.application.PlatformImpl;
 
@@ -108,6 +112,7 @@ public class Simulator extends SimulationBasics
 	private ArrayList<CriticalWayPoint> criticalPoints = new ArrayList<CriticalWayPoint>();
 	private int cp_num = 0; // redundant variable, used to improve performance
 	static final public float LaneWidth = 3.5f;
+	private static BitmapText  testxt;
 
 	// added by Yelly
 	// researcher-driving, to generate way points (especially at intersection)
@@ -972,5 +977,20 @@ public class Simulator extends SimulationBasics
 
 			e.printStackTrace();
 		}
+	}
+	public void traff_num_init(Simulator sim) {
+		Node guiNode = sim.getGuiNode();
+		BitmapFont guiFont = sim.getAssetManager().loadFont("Interface/Fonts/Default.fnt");
+		testxt = new BitmapText(guiFont, false);
+		testxt.setName("currentGearText");
+		testxt.setSize(guiFont.getCharSet().getRenderedSize());
+		testxt.setColor(ColorRGBA.Green);
+		testxt.setLocalTranslation(1077, 668, 0);
+        guiNode.attachChild(testxt);
+		
+	}
+	
+	public BitmapText get_Bitmap () {
+		return testxt;
 	}
 }

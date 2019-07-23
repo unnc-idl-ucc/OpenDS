@@ -18,13 +18,19 @@
 
 package eu.opends.trigger;
 
+import com.jme3.font.BitmapFont;
+import com.jme3.font.BitmapText;
+import com.jme3.math.ColorRGBA;
+import com.jme3.scene.Node;
+
+import eu.opends.environment.TrafficLightCenter.TrafficLightMode;
 import eu.opends.main.Simulator;
 
 /**
  * 
  * @author Rafael Math
  */
-public class SetMotorwayTaskStimulusTriggerAction extends TriggerAction 
+public class SetMotorwayTaskStimulusTriggerAction extends TriggerAction
 {
 	private Simulator sim;
 	private String stimulusID;
@@ -35,17 +41,31 @@ public class SetMotorwayTaskStimulusTriggerAction extends TriggerAction
 		super(delay, maxRepeat);
 		this.sim = sim;
 		this.stimulusID = stimulusID;
+		if(maxRepeat == 0) {
+			sim.traff_num_init(sim);
+			maxRepeat =1;
+		}
+			
 	}
 	
 
 	@Override
-	protected void execute() 
+	protected void execute()
 	{
 		if(!isExceeded())
 		{
-			sim.getMotorwayTask().setStimulus(stimulusID);
-			updateCounter();
+			    int r = Integer.parseInt(stimulusID);
+			    if(r == 0) {
+			    	sim.get_Bitmap().setText("");
+			    }
+			    else {
+			    	sim.get_Bitmap().setText(stimulusID);
+			    }
+				
 		}
 	}
+	
+	
+
 
 }
