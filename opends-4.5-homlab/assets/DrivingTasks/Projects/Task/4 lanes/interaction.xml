@@ -1,0 +1,1740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interaction xmlns="http://opends.eu/drivingtask/interaction"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://opends.eu/drivingtask/interaction ../../Schema/interaction.xsd">
+
+
+	<activities>
+		<activity id="activity100">
+			<action id="setMotorwayTaskStimulus" delay="0" repeat="0">
+				<parameter name="stimulusID" value="9" />
+			</action>
+		</activity>
+		<activity id="activity101">
+			<action id="setMotorwayTaskStimulus" delay="1" repeat="2">
+				<parameter name="stimulusID" value="8" />
+			</action>
+		</activity>
+		<activity id="activity102">
+			<action id="setMotorwayTaskStimulus" delay="2" repeat="0">
+				<parameter name="stimulusID" value="7" />
+			</action>
+		</activity>
+		<activity id="activity103">
+			<action id="setMotorwayTaskStimulus" delay="3" repeat="2">
+				<parameter name="stimulusID" value="6" />
+			</action>
+		</activity>
+		<activity id="activity104">
+			<action id="setMotorwayTaskStimulus" delay="4" repeat="0">
+				<parameter name="stimulusID" value="5" />
+			</action>
+		</activity>
+		<activity id="activity105">
+			<action id="setMotorwayTaskStimulus" delay="5" repeat="2">
+				<parameter name="stimulusID" value="4" />
+			</action>
+		</activity>
+		<activity id="activity106">
+			<action id="setMotorwayTaskStimulus" delay="6" repeat="0">
+				<parameter name="stimulusID" value="3" />
+			</action>
+		</activity>
+		<activity id="activity107">
+			<action id="setMotorwayTaskStimulus" delay="7" repeat="2">
+				<parameter name="stimulusID" value="2" />
+			</action>
+		</activity>
+		<activity id="activity108">
+			<action id="setMotorwayTaskStimulus" delay="8" repeat="0">
+				<parameter name="stimulusID" value="1" />
+			</action>
+		</activity>
+		<activity id="activity109">
+			<action id="setMotorwayTaskStimulus" delay="9" repeat="2">
+				<parameter name="stimulusID" value="0" />
+			</action>
+		</activity>
+	
+		<activity id="activity00">
+			<action id="startRecording" delay="0" repeat="4">
+				<parameter name="track" value="1" />
+			</action>
+		</activity>
+		<activity id="activity20"> <!-- 第1个路口变绿灯-->
+			<action id="requestGreenTrafficLight" delay="0" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_04" />
+			</action>
+		</activity>
+		
+		<!-- 第1个路口左右方向变绿灯->为了让当前方向变黄灯 -->
+		<!--activity id="activity20_0"> 
+			<action id="requestGreenTrafficLight" delay="3" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_01" />
+			</action>
+		</activity-->
+		<activity id="activity21"> 
+			<action id="requestOffTrafficLight" delay="0" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_04" />
+			</action>
+		</activity>
+		<activity id="activity30"> 
+			<action id="setGreenTrafficLight" delay="0.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_04" />
+			</action>
+		</activity>
+		<activity id="activity31"> 
+			<action id="requestOffTrafficLight" delay="1" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_04" />
+			</action>
+		</activity>
+		<activity id="activity32"> 
+			<action id="setGreenTrafficLight" delay="1.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_04" />
+			</action>
+		</activity>
+		<activity id="activity33"> 
+			<action id="requestOffTrafficLight" delay="2" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_04" />
+			</action>
+		</activity>
+		<activity id="activity34"> 
+			<action id="setGreenTrafficLight" delay="2.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_04" />
+			</action>
+		</activity>
+		<activity id="activity36"> 
+			<action id="requestOffTrafficLight" delay="3" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_04" />
+			</action>
+		</activity>
+		<activity id="activity37"> 
+			<action id="setGreenTrafficLight" delay="3.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_04" />
+			</action>
+		</activity>
+		<activity id="activity38"> 
+			<action id="requestOffTrafficLight" delay="4" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_04" />
+			</action>
+		</activity>
+		<activity id="activity39"> 
+			<action id="setGreenTrafficLight" delay="4.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_04" />
+			</action>
+		</activity>
+		<activity id="activity40"> 
+			<action id="requestOffTrafficLight" delay="5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_04" />
+			</action>
+		</activity>
+		<activity id="activity41"> 
+			<action id="setGreenTrafficLight" delay="5.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_04" />
+			</action>
+		</activity>
+		<activity id="activity42"> 
+			<action id="requestOffTrafficLight" delay="6" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_04" />
+			</action>
+		</activity>
+		<activity id="activity43"> 
+			<action id="setGreenTrafficLight" delay="6.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_04" />
+			</action>
+		</activity>
+		<activity id="activity44"> 
+			<action id="requestOffTrafficLight" delay="7" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_04" />
+			</action>
+		</activity>
+		<activity id="activity45"> 
+			<action id="setGreenTrafficLight" delay="7.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_04" />
+			</action>
+		</activity>
+		<activity id="activity46"> 
+			<action id="requestOffTrafficLight" delay="8" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_04" />
+			</action>
+		</activity>
+		<activity id="activity47"> 
+			<action id="setGreenTrafficLight" delay="8.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_04" />
+			</action>
+		</activity>
+				
+		
+		<activity id="activity35"> 
+			<action id="requestGreenTrafficLight" delay="9" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_01" />
+			</action>
+		</activity>
+		
+		<activity id="activity09"> 
+			<action id="requestGreenTrafficLight" delay="30" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.00_04" />
+			</action>
+		</activity>		
+		
+		
+		<!-- 路段1红绿灯触发 -->
+		<activity id="activity20_1"> <!-- 路段1路口变绿灯-->
+			<action id="requestGreenTrafficLight" delay="0" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_01" />
+			</action>
+		</activity>
+		
+		<activity id="activity21_1"> 
+			<action id="requestOffTrafficLight" delay="0" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_01" />
+			</action>
+		</activity>
+		<activity id="activity30_1"> 
+			<action id="setGreenTrafficLight" delay="0.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_01" />
+			</action>
+		</activity>
+		<activity id="activity31_1"> 
+			<action id="requestOffTrafficLight" delay="1" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_01" />
+			</action>
+		</activity>
+		<activity id="activity32_1"> 
+			<action id="setGreenTrafficLight" delay="1.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_01" />
+			</action>
+		</activity>
+		<activity id="activity33_1"> 
+			<action id="requestOffTrafficLight" delay="2" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_01" />
+			</action>
+		</activity>
+		<activity id="activity34_1"> 
+			<action id="setGreenTrafficLight" delay="2.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_01" />
+			</action>
+		</activity>
+		<activity id="activity36_1"> 
+			<action id="requestOffTrafficLight" delay="3" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_01" />
+			</action>
+		</activity>
+		<activity id="activity37_1"> 
+			<action id="setGreenTrafficLight" delay="3.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_01" />
+			</action>
+		</activity>
+		<activity id="activity38_1"> 
+			<action id="requestOffTrafficLight" delay="4" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_01" />
+			</action>
+		</activity>
+		<activity id="activity39_1"> 
+			<action id="setGreenTrafficLight" delay="4.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_01" />
+			</action>
+		</activity>
+		<activity id="activity40_1"> 
+			<action id="requestOffTrafficLight" delay="5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_01" />
+			</action>
+		</activity>
+		<activity id="activity41_1"> 
+			<action id="setGreenTrafficLight" delay="5.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_01" />
+			</action>
+		</activity>
+		<activity id="activity42_1"> 
+			<action id="requestOffTrafficLight" delay="6" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_01" />
+			</action>
+		</activity>
+		<activity id="activity43_1"> 
+			<action id="setGreenTrafficLight" delay="6.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_01" />
+			</action>
+		</activity>
+		<activity id="activity44_1"> 
+			<action id="requestOffTrafficLight" delay="7" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_01" />
+			</action>
+		</activity>
+		<activity id="activity45_1"> 
+			<action id="setGreenTrafficLight" delay="7.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_01" />
+			</action>
+		</activity>
+		<activity id="activity46_1"> 
+			<action id="requestOffTrafficLight" delay="8" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_01" />
+			</action>
+		</activity>
+		<activity id="activity47_1"> 
+			<action id="setGreenTrafficLight" delay="8.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_01" />
+			</action>
+		</activity>
+				
+		<activity id="activity35_1"> 
+			<action id="requestGreenTrafficLight" delay="9" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_03" />
+			</action>
+		</activity>
+		<activity id="activity09_1"> 
+			<action id="requestGreenTrafficLight" delay="15" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.01_01" />
+			</action>
+		</activity>
+		
+		
+		<!-- 路段2红绿灯触发 -->
+		<activity id="activity20_2"> <!-- 路段2路口变绿灯-->
+			<action id="requestGreenTrafficLight" delay="0" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>
+		
+		<activity id="activity21_2"> 
+			<action id="requestOffTrafficLight" delay="0" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>
+		<activity id="activity30_2"> 
+			<action id="setGreenTrafficLight" delay="0.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>
+		<activity id="activity31_2"> 
+			<action id="requestOffTrafficLight" delay="1" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>
+		<activity id="activity32_2"> 
+			<action id="setGreenTrafficLight" delay="1.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>
+		<activity id="activity33_2"> 
+			<action id="requestOffTrafficLight" delay="2" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>
+		<activity id="activity34_2"> 
+			<action id="setGreenTrafficLight" delay="2.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>
+		<activity id="activity36_2"> 
+			<action id="requestOffTrafficLight" delay="3" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>
+		<activity id="activity37_2"> 
+			<action id="setGreenTrafficLight" delay="3.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>
+		<activity id="activity38_2"> 
+			<action id="requestOffTrafficLight" delay="4" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>
+		<activity id="activity39_2"> 
+			<action id="setGreenTrafficLight" delay="4.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>
+		<activity id="activity40_2"> 
+			<action id="requestOffTrafficLight" delay="5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>
+		<activity id="activity41_2"> 
+			<action id="setGreenTrafficLight" delay="5.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>
+		<activity id="activity42_2"> 
+			<action id="requestOffTrafficLight" delay="6" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>
+		<activity id="activity43_2"> 
+			<action id="setGreenTrafficLight" delay="6.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>
+		<activity id="activity44_2"> 
+			<action id="requestOffTrafficLight" delay="7" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>
+		<activity id="activity45_2"> 
+			<action id="setGreenTrafficLight" delay="7.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>
+		<activity id="activity46_2"> 
+			<action id="requestOffTrafficLight" delay="8" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>
+		<activity id="activity47_2"> 
+			<action id="setGreenTrafficLight" delay="8.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>
+		
+		<activity id="activity35_2"> 
+			<action id="requestGreenTrafficLight" delay="9" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>
+		<activity id="activity09_2"> 
+			<action id="requestGreenTrafficLight" delay="15" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>		
+		
+		
+		
+		<!-- 路段3红绿灯触发 -->
+		<activity id="activity20_3"> <!-- 路段3路口变绿灯-->
+			<action id="requestGreenTrafficLight" delay="0" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>
+		
+		<activity id="activity21_3"> 
+			<action id="requestOffTrafficLight" delay="0" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>
+		<activity id="activity30_3"> 
+			<action id="setGreenTrafficLight" delay="0.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>
+		<activity id="activity31_3"> 
+			<action id="requestOffTrafficLight" delay="1" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>
+		<activity id="activity32_3"> 
+			<action id="setGreenTrafficLight" delay="1.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>
+		<activity id="activity33_3"> 
+			<action id="requestOffTrafficLight" delay="2" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>
+		<activity id="activity34_3"> 
+			<action id="setGreenTrafficLight" delay="2.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>
+		<activity id="activity36_3"> 
+			<action id="requestOffTrafficLight" delay="3" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>
+		<activity id="activity37_3"> 
+			<action id="setGreenTrafficLight" delay="3.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>
+		<activity id="activity38_3"> 
+			<action id="requestOffTrafficLight" delay="4" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>
+		<activity id="activity39_3"> 
+			<action id="setGreenTrafficLight" delay="4.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>
+		<activity id="activity40_3"> 
+			<action id="requestOffTrafficLight" delay="5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>
+		<activity id="activity41_3"> 
+			<action id="setGreenTrafficLight" delay="5.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>
+		<activity id="activity42_3"> 
+			<action id="requestOffTrafficLight" delay="6" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>
+		<activity id="activity43_3"> 
+			<action id="setGreenTrafficLight" delay="6.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>
+		<activity id="activity44_3"> 
+			<action id="requestOffTrafficLight" delay="7" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>
+		<activity id="activity45_3"> 
+			<action id="setGreenTrafficLight" delay="7.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>
+		<activity id="activity46_3"> 
+			<action id="requestOffTrafficLight" delay="8" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>
+		<activity id="activity47_3"> 
+			<action id="setGreenTrafficLight" delay="8.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>
+		
+		<activity id="activity35_3"> 
+			<action id="requestGreenTrafficLight" delay="9" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_04" />
+			</action>
+		</activity>
+		<activity id="activity09_3"> 
+			<action id="requestGreenTrafficLight" delay="15" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.02_01" />
+			</action>
+		</activity>		
+		
+		
+		<!-- 路段4红绿灯触发 -->
+		<activity id="activity20_4"> <!-- 路段4路口变绿灯-->
+			<action id="requestGreenTrafficLight" delay="0" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_04" />
+			</action>
+		</activity>
+		
+		<activity id="activity21_4"> 
+			<action id="requestOffTrafficLight" delay="0" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_04" />
+			</action>
+		</activity>
+		<activity id="activity30_4"> 
+			<action id="setGreenTrafficLight" delay="0.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_04" />
+			</action>
+		</activity>
+		<activity id="activity31_4"> 
+			<action id="requestOffTrafficLight" delay="1" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_04" />
+			</action>
+		</activity>
+		<activity id="activity32_4"> 
+			<action id="setGreenTrafficLight" delay="1.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_04" />
+			</action>
+		</activity>
+		<activity id="activity33_4"> 
+			<action id="requestOffTrafficLight" delay="2" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_04" />
+			</action>
+		</activity>
+		<activity id="activity34_4"> 
+			<action id="setGreenTrafficLight" delay="2.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_04" />
+			</action>
+		</activity>
+		<activity id="activity36_4"> 
+			<action id="requestOffTrafficLight" delay="3" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_04" />
+			</action>
+		</activity>
+		<activity id="activity37_4"> 
+			<action id="setGreenTrafficLight" delay="3.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_04" />
+			</action>
+		</activity>
+		<activity id="activity38_4"> 
+			<action id="requestOffTrafficLight" delay="4" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_04" />
+			</action>
+		</activity>
+		<activity id="activity39_4"> 
+			<action id="setGreenTrafficLight" delay="4.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_04" />
+			</action>
+		</activity>
+		<activity id="activity40_4"> 
+			<action id="requestOffTrafficLight" delay="5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_04" />
+			</action>
+		</activity>
+		<activity id="activity41_4"> 
+			<action id="setGreenTrafficLight" delay="5.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_04" />
+			</action>
+		</activity>
+		<activity id="activity42_4"> 
+			<action id="requestOffTrafficLight" delay="6" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_04" />
+			</action>
+		</activity>
+		<activity id="activity43_4"> 
+			<action id="setGreenTrafficLight" delay="6.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_04" />
+			</action>
+		</activity>
+		<activity id="activity44_4"> 
+			<action id="requestOffTrafficLight" delay="7" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_04" />
+			</action>
+		</activity>
+		<activity id="activity45_4"> 
+			<action id="setGreenTrafficLight" delay="7.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_04" />
+			</action>
+		</activity>
+		<activity id="activity46_4"> 
+			<action id="requestOffTrafficLight" delay="8" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_04" />
+			</action>
+		</activity>
+		<activity id="activity47_4"> 
+			<action id="setGreenTrafficLight" delay="8.5" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_04" />
+			</action>
+		</activity>
+		
+		<activity id="activity35_4"> 
+			<action id="requestGreenTrafficLight" delay="9" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_02" />
+			</action>
+		</activity>
+		<activity id="activity09_4"> 
+			<action id="requestGreenTrafficLight" delay="15" repeat="0">
+				<parameter name="trafficLightID" value="TrafficLight.03_04" />
+			</action>
+		</activity>				
+		
+		
+
+		
+		
+		
+		
+		<activity id="activity01">
+			<action id="manipulateObject" delay="0" repeat="4">
+				<parameter name="id" value="RoadworksSign1" />
+				<parameter name="translationX" value="-81" />
+				<parameter name="translationY" value="-1.693" />
+				<parameter name="translationZ" value="-48" />
+				<parameter name="rotationX" value="0" />
+				<parameter name="rotationY" value="135" />
+				<parameter name="rotationZ" value="0" />
+				<parameter name="scaleX" value="0.02" />
+				<parameter name="scaleY" value="0.02" />
+				<parameter name="scaleZ" value="0.02" />
+				<parameter name="visible" value="true" />
+			</action>
+		</activity>
+		<activity id="activity02">
+			<action id="sendMessage" delay="0" repeat="4">
+				<parameter name="text" value="Recording started" />
+				<parameter name="duration" value="3" />
+			</action>
+		</activity>
+		<activity id="activity03">
+			<action id="pauseSimulation" delay="0" repeat="4">
+				<parameter name="duration" value="3" />
+			</action>
+		</activity>
+		<activity id="activity04">
+			<action id="startRecording" delay="0" repeat="4">
+				<parameter name="track" value="1" />
+			</action>
+		</activity>
+		<activity id="activity05">
+			<action id="stopRecording" delay="0" repeat="4">
+			</action>
+		</activity>
+		<activity id="activity06">
+			<action id="playSound" delay="0" repeat="4">
+				<parameter name="soundID" value="beep" />
+			</action>
+		</activity>
+		<activity id="activity07">
+			<action id="resetCar" delay="0" repeat="4">
+				<parameter name="resetPointID" value="reset2" />
+			</action>
+		</activity>
+	<!--  -->
+		
+		
+		
+		<activity id="activity08_1"> <!--超车触发器1 -->
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car3" />
+				<parameter name="wayPointID" value="200" />
+			</action>
+		</activity>
+		<activity id="activity08_2">  <!--超车触发器2 -->
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car4" />
+				<parameter name="wayPointID" value="300" />
+			</action>
+		</activity>
+		
+		<activity id="activity08_3"> <!--超车触发器3 -->
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car3_1" />
+				<parameter name="wayPointID" value="400" />
+			</action>
+		</activity>
+		<activity id="activity08_4">  <!--超车触发器4 -->
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car4_1" />
+				<parameter name="wayPointID" value="500" />
+			</action>
+		</activity>
+		<!-- 四车道的超车 -->
+		<activity id="activity08_80"> <!--超车触发器1-1 -->
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car3_2" />
+				<parameter name="wayPointID" value="200-1" />
+			</action>
+		</activity>
+		<activity id="activity08_81">  <!--超车触发器2-1 -->
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car4_2" />
+				<parameter name="wayPointID" value="300-1" />
+			</action>
+		</activity>
+		
+		<activity id="activity08_82"> <!--超车触发器3-1 -->
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car3_3" />
+				<parameter name="wayPointID" value="400-1" />
+			</action>
+		</activity>
+		<activity id="activity08_83">  <!--超车触发器4-1 -->
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car4_3" />
+				<parameter name="wayPointID" value="500-1" />
+			</action>
+		</activity>
+		
+		<!-- 其他灵车触发器 -->
+		<activity id="activity08_9"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car7" />
+				<parameter name="wayPointID" value="1001" />
+			</action>
+		</activity>
+		<activity id="activity08_10">  
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car8" />
+				<parameter name="wayPointID" value="1101" />
+			</action>
+		</activity>
+		
+		<activity id="activity08_11">
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car7_1" />
+				<parameter name="wayPointID" value="1201" />
+			</action>
+		</activity>
+		<activity id="activity08_12"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car8_1" />
+				<parameter name="wayPointID" value="1301" />
+			</action>
+		</activity>
+		
+		<activity id="activity08_13"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car11" />
+				<parameter name="wayPointID" value="1701" />
+			</action>
+		</activity>
+		<activity id="activity08_14">  
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car12" />
+				<parameter name="wayPointID" value="1801" />
+			</action>
+		</activity>
+		<activity id="activity08_15">  
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car13" />
+				<parameter name="wayPointID" value="4001" />
+			</action>
+		</activity>
+		<activity id="activity08_27"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car18" />
+				<parameter name="wayPointID" value="3901" />
+			</action>
+		</activity>
+		<!-- 四车道的直行灵车 -->
+		<activity id="activity08_84"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car7_2" />
+				<parameter name="wayPointID" value="1001-1" />
+			</action>
+		</activity>
+		<activity id="activity08_85">  
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car8_2" />
+				<parameter name="wayPointID" value="1101-1" />
+			</action>
+		</activity>
+		<activity id="activity08_86"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car11_2" />
+				<parameter name="wayPointID" value="1701-1" />
+			</action>
+		</activity>
+		<activity id="activity08_87">  
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car12_2" />
+				<parameter name="wayPointID" value="1801-1" />
+			</action>
+		</activity>
+		
+		<activity id="activity08_88">
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car7_3" />
+				<parameter name="wayPointID" value="1201-1" />
+			</action>
+		</activity>
+		<activity id="activity08_89"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car8_3" />
+				<parameter name="wayPointID" value="1301-1" />
+			</action>
+		</activity>
+		<activity id="activity08_90">
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car11_3" />
+				<parameter name="wayPointID" value="1901-1" />
+			</action>
+		</activity>
+		<activity id="activity08_91"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car12_3" />
+				<parameter name="wayPointID" value="2001-1" />
+			</action>
+		</activity>
+		
+		<!-- 左转灵车 -->
+		<activity id="activity08_16">
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car11_1" />
+				<parameter name="wayPointID" value="1901" />
+			</action>
+		</activity>
+		<activity id="activity08_17"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car12_1" />
+				<parameter name="wayPointID" value="2001" />
+			</action>
+		</activity>
+		<activity id="activity08_18"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car13_1" />
+				<parameter name="wayPointID" value="4101" />
+			</action>
+		</activity>
+		<activity id="activity08_28"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car18_1" />
+				<parameter name="wayPointID" value="4201" />
+			</action>
+		</activity>
+		
+		<!-- 卡车触发器 -->
+		<activity id="activity08_5"> <!--卡车触发器1 -->
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car5" />
+				<parameter name="wayPointID" value="601" />
+			</action>
+		</activity>
+		<activity id="activity08_6">  <!--卡车触发器2 -->
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car6" />
+				<parameter name="wayPointID" value="701" />
+			</action>
+		</activity>
+
+		<activity id="activity08_7"> <!--卡车触发器3 -->
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car5_1" />
+				<parameter name="wayPointID" value="801" />
+			</action>
+		</activity>
+		<activity id="activity08_8">  <!--卡车触发器4 -->
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car6_1" />
+				<parameter name="wayPointID" value="901" />
+			</action>
+		</activity>
+		
+		<!-- 四车道的 -->
+		<activity id="activity08_68"> <!--卡车触发器3 -->
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car5_2" />
+				<parameter name="wayPointID" value="601-1" />
+			</action>
+		</activity>
+		<activity id="activity08_69">  <!--卡车触发器4 -->
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car6_2" />
+				<parameter name="wayPointID" value="701-1" />
+			</action>
+		</activity>
+		
+		<activity id="activity08_74"> <!--卡车触发器3 -->
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car5_3" />
+				<parameter name="wayPointID" value="801-1" />
+			</action>
+		</activity>
+		<activity id="activity08_75">  <!--卡车触发器4 -->
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car6_3" />
+				<parameter name="wayPointID" value="901-1" />
+			</action>
+		</activity>
+		
+		<!-- 触发卡车路段的灵车 -->
+		<activity id="activity08_19"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car14" />
+				<parameter name="wayPointID" value="2501" />
+			</action>
+		</activity>
+		<activity id="activity08_20">  
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car15" />
+				<parameter name="wayPointID" value="2701" />
+			</action>
+		</activity>
+		<activity id="activity08_21"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car16" />
+				<parameter name="wayPointID" value="2601" />
+			</action>
+		</activity>
+		<activity id="activity08_22">  
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car17" />
+				<parameter name="wayPointID" value="2801" />
+			</action>
+		</activity>
+		<!-- 四车道的灵车 -->
+		<activity id="activity08_70"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car14_2" />
+				<parameter name="wayPointID" value="2501-1" />
+			</action>
+		</activity>
+		<activity id="activity08_71">  
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car15_2" />
+				<parameter name="wayPointID" value="2701-1" />
+			</action>
+		</activity>
+		<activity id="activity08_72"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car16_2" />
+				<parameter name="wayPointID" value="2601-1" />
+			</action>
+		</activity>
+		<activity id="activity08_73">  
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car17_2" />
+				<parameter name="wayPointID" value="2801-1" />
+			</action>
+		</activity>
+		
+		<activity id="activity08_29"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car19" />
+				<parameter name="wayPointID" value="4301" />
+			</action>
+		</activity>
+		<activity id="activity08_30">  
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car20" />
+				<parameter name="wayPointID" value="4401" />
+			</action>
+		</activity>
+		
+		<activity id="activity08_23"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car14_1" />
+				<parameter name="wayPointID" value="2901" />
+			</action>
+		</activity>
+		<activity id="activity08_24">  
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car15_1" />
+				<parameter name="wayPointID" value="3101" />
+			</action>
+		</activity>
+		<activity id="activity08_25"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car16_1" />
+				<parameter name="wayPointID" value="3001" />
+			</action>
+		</activity>
+		<activity id="activity08_26">  
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car17_1" />
+				<parameter name="wayPointID" value="3201" />
+			</action>
+		</activity>
+		
+		<!-- 四车道的灵车 -->
+		<activity id="activity08_76"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car14_3" />
+				<parameter name="wayPointID" value="2901-1" />
+			</action>
+		</activity>
+		<activity id="activity08_77">  
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car15_3" />
+				<parameter name="wayPointID" value="3101-1" />
+			</action>
+		</activity>
+		<activity id="activity08_78"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car16_3" />
+				<parameter name="wayPointID" value="3001-1" />
+			</action>
+		</activity>
+		<activity id="activity08_79">  
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car17_3" />
+				<parameter name="wayPointID" value="3201-1" />
+			</action>
+		</activity>
+		
+		
+		<activity id="activity08_31"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car19_1" />
+				<parameter name="wayPointID" value="4501" />
+			</action>
+		</activity>
+		<activity id="activity08_32">  
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car20_1" />
+				<parameter name="wayPointID" value="4601" />
+			</action>
+		</activity>	
+		
+		<!-- 卡车路段封堵超车方向的车 -->
+		<activity id="activity08_144"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car39_1" />
+				<parameter name="wayPointID" value="701" />
+			</action>
+		</activity>
+		<activity id="activity08_145">  
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car39_2" />
+				<parameter name="wayPointID" value="601" />
+			</action>
+		</activity>	
+		
+		<activity id="activity08_146"> 
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car40_1" />
+				<parameter name="wayPointID" value="801" />
+			</action>
+		</activity>
+		<activity id="activity08_147">  
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car40_2" />
+				<parameter name="wayPointID" value="901" />
+			</action>
+		</activity>	
+	
+	<!--  -->
+		<activity id="activity10">
+			<action id="setTVPTStimulus" delay="0" repeat="0">
+				<parameter name="stimulusID" value="FVTS" />
+			</action>
+		</activity>
+		<activity id="activity11">
+			<action id="writeToKnowledgeBase" delay="0" repeat="0">
+				<parameter name="path" value="/thisVehicle/physicalAttributes" />
+				<parameter name="propertyName" value="testBoolean" />
+				<parameter name="propertyValue" value="true" />
+				<parameter name="propertyType" value="boolean" />
+			</action>
+		</activity>
+        <activity id="activity12">
+            <action id="reportTrafficLight" delay="0" repeat="0">
+                <parameter name="trafficLightID" value="TrafficLight.00_12" />
+                <parameter name="trafficLightState" value="red" />
+            </action>
+        </activity>
+        <activity id="activity13">
+            <action id="reportTrafficLight" delay="0" repeat="0">
+                <parameter name="trafficLightID" value="TrafficLight.00_12" />
+                <parameter name="trafficLightState" value="yellow" />
+            </action>
+        </activity>
+        <activity id="activity14">
+            <action id="reportTrafficLight" delay="0" repeat="0">
+                <parameter name="trafficLightID" value="TrafficLight.00_12" />
+                <parameter name="trafficLightState" value="green" />
+            </action>
+        </activity>
+        <activity id="activity15">
+            <action id="reportSpeed" delay="0" repeat="0">
+                <parameter name="type" value="greaterThan" />
+                <parameter name="speed" value="20" />
+            </action>
+        </activity>
+        <activity id="activity16">
+            <action id="reportSpeed" delay="0" repeat="0">
+                <parameter name="type" value="lessThan" />
+                <parameter name="speed" value="20" />
+            </action>
+        </activity>
+        
+        <activity id="pastOneMinuteAction">
+			<action id="playSound" delay="0" repeat="1">
+				<parameter name="soundID" value="sound_test" />
+			</action>
+		</activity>
+                     
+	</activities>
+	
+	<triggers>
+	
+	 <trigger id="sound_1" priority="1">
+			<activities>
+				<activity ref="pastOneMinuteAction"/>
+			</activities>
+			<condition>collideWith:trigger_sound_1</condition>		
+		</trigger>
+	
+	
+		<trigger id="sound_2" priority="1">
+			<activities>
+				<activity ref="pastOneMinuteAction"/>
+			</activities>
+			<condition>collideWith:trigger_sound_2</condition>		
+		</trigger>
+        <trigger id="collideWithTrafficLightBox" priority="1">
+            <activities>
+                <activity ref="activity15"/>
+                <activity ref="activity16"/>
+            </activities>
+            
+            <condition>collideWith:trafficLightBox</condition>
+        </trigger>
+    
+	
+		
+		<!-- 直行2个超车灵车的触发 -->
+		<trigger id="collideWithResetBox1" priority="1">			
+			<activities>
+				<activity ref="activity08_1"/>
+				<activity ref="activity08_9"/>
+				<activity ref="activity08_13"/>				
+				<activity ref="activity08_15"/>
+				<activity ref="activity08_27"/>
+				
+			</activities>						
+			<condition>collideWith:triggerBox2</condition>
+		</trigger>
+		<trigger id="collideWithResetBox2" priority="1">			
+			<activities>
+				<activity ref="activity08_2"/>
+				<activity ref="activity08_10"/>				
+				<activity ref="activity08_14"/>
+				<activity ref="activity08_15"/>
+				<activity ref="activity08_27"/>
+			</activities>						
+			<condition>collideWith:triggerBox2_1</condition>
+		</trigger>
+		
+
+		
+		<!-- 左转2个超车灵车的触发 -->
+		<trigger id="collideWithResetBox3" priority="1">			
+			<activities>
+				<activity ref="activity08_3"/>
+				<activity ref="activity08_11"/>
+				<activity ref="activity08_16"/>
+				
+				<activity ref="activity08_18"/>
+				<activity ref="activity08_28"/>
+			</activities>						
+			<condition>collideWith:triggerBox3</condition>
+		</trigger>
+		<trigger id="collideWithResetBox4" priority="1">			
+			<activities>
+				<activity ref="activity08_4"/>
+				<activity ref="activity08_12"/>
+				
+				<activity ref="activity08_17"/>
+				<activity ref="activity08_18"/>
+				<activity ref="activity08_28"/>
+			</activities>						
+			<condition>collideWith:triggerBox3_1</condition>
+		</trigger>
+		
+		<!-- 四车道的超车触发器 -->
+		<!-- 直行2个超车灵车的触发-2 -->
+		<trigger id="collideWithResetBox1" priority="1">			
+			<activities>
+				<activity ref="activity08_80"/>
+				<activity ref="activity08_84"/>				
+				<activity ref="activity08_86"/>			
+				<activity ref="activity08_15"/>
+				<activity ref="activity08_27"/>
+				
+			</activities>						
+			<condition>collideWith:triggerBox2_3</condition>
+		</trigger>
+		<trigger id="collideWithResetBox2" priority="1">			
+			<activities>
+				<activity ref="activity08_81"/>
+				<activity ref="activity08_85"/>				
+				<activity ref="activity08_87"/>
+				<activity ref="activity08_15"/>
+				<activity ref="activity08_27"/>
+			</activities>						
+			<condition>collideWith:triggerBox2_4</condition>
+		</trigger>
+		
+		
+		<!-- 四车道左转个超车灵车的触发 -->
+		<trigger id="collideWithResetBox3" priority="1">			
+			<activities>
+				<activity ref="activity08_83"/>
+				<activity ref="activity08_88"/>
+				<activity ref="activity08_90"/>
+				
+				<activity ref="activity08_18"/>
+				<activity ref="activity08_28"/>
+			</activities>						
+			<condition>collideWith:triggerBox3_3</condition>
+		</trigger>
+		<trigger id="collideWithResetBox4" priority="1">			
+			<activities>
+				<activity ref="activity08_82"/>
+				<activity ref="activity08_89"/>
+				
+				<activity ref="activity08_91"/>
+				<activity ref="activity08_18"/>
+				<activity ref="activity08_28"/>
+			</activities>						
+			<condition>collideWith:triggerBox3_4</condition>
+		</trigger>
+		
+		
+		<!-- 卡车触发器 -->
+		<!-- 左转右转4个超车灵车的触发 -->
+		<trigger id="collideWithResetBox5" priority="1">			
+			<activities>
+				<activity ref="activity08_5"/>
+				<activity ref="activity08_19"/>
+				<activity ref="activity08_20"/>
+				
+				<activity ref="activity08_29"/>
+				<activity ref="activity08_30"/>				
+			</activities>						
+			<condition>collideWith:triggerBox4</condition>
+		</trigger>
+		<trigger id="collideWithResetBox6" priority="1">			
+			<activities>
+				<activity ref="activity08_6"/>
+				<!--activity ref="activity08_21"/>
+				<activity ref="activity08_22"/-->
+				<activity ref="activity08_72"/>
+				<activity ref="activity08_73"/>
+				
+				<activity ref="activity08_29"/>
+				<activity ref="activity08_30"/>	
+				
+				<activity ref="activity08_145"/>
+			</activities>						
+			<condition>collideWith:triggerBox4_1</condition>
+		</trigger>
+		
+		<trigger id="collideWithResetBox5_1" priority="1">			
+			<activities>
+				<activity ref="activity08_68"/>
+				<activity ref="activity08_70"/>
+				<activity ref="activity08_71"/>
+				
+				<activity ref="activity08_29"/>
+				<activity ref="activity08_30"/>	
+				
+				<activity ref="activity08_144"/>			
+			</activities>						
+			<condition>collideWith:triggerBox4_2</condition>
+		</trigger>
+		<trigger id="collideWithResetBox6_1" priority="1">			
+			<activities>
+				<activity ref="activity08_69"/>
+				<activity ref="activity08_72"/>
+				<activity ref="activity08_73"/>
+				<activity ref="activity08_29"/>
+				<activity ref="activity08_30"/>		
+			</activities>						
+			<condition>collideWith:triggerBox4_3</condition>
+		</trigger>
+		
+		<!-- 直行左转4个超车灵车的触发 -->
+		<trigger id="collideWithResetBox7" priority="1">			
+			<activities>
+				<activity ref="activity08_7"/>
+				<activity ref="activity08_25"/>
+				<activity ref="activity08_26"/>
+				
+				<activity ref="activity08_31"/>
+				<activity ref="activity08_32"/>
+			</activities>						
+			<condition>collideWith:triggerBox5</condition>
+		</trigger>
+		<trigger id="collideWithResetBox8" priority="1">			
+			<activities>
+				<activity ref="activity08_8"/>
+				<!--activity ref="activity08_23"/>
+				<activity ref="activity08_24"/-->
+				<activity ref="activity08_76"/>
+				<activity ref="activity08_77"/>
+				
+				<activity ref="activity08_31"/>
+				<activity ref="activity08_32"/>
+				
+				<activity ref="activity08_146"/>
+			</activities>						
+			<condition>collideWith:triggerBox5_1</condition>
+		</trigger>
+		
+		<trigger id="collideWithResetBox7_1" priority="1">			
+			<activities>
+				<activity ref="activity08_75"/>
+				<activity ref="activity08_76"/>
+				<activity ref="activity08_77"/>
+				
+				<activity ref="activity08_31"/>
+				<activity ref="activity08_32"/>
+			
+			</activities>						
+			<condition>collideWith:triggerBox5_3</condition>
+		</trigger>
+		<trigger id="collideWithResetBox8_1" priority="1">			
+			<activities>
+				<activity ref="activity08_74"/>
+				<activity ref="activity08_78"/>
+				<activity ref="activity08_79"/>
+				
+				<activity ref="activity08_31"/>
+				<activity ref="activity08_32"/>
+				
+				<activity ref="activity08_147"/>
+			</activities>						
+			<condition>collideWith:triggerBox5_4</condition>
+		</trigger>
+		
+		
+		
+		<!-- 红绿灯触发0 -->
+		<trigger id="collideWithTestTL" priority="1">			
+			<activities>
+				<activity ref="activity09"/>				
+			</activities>						
+			<condition>collideWith:newTrigger</condition>
+		</trigger>
+		
+		<trigger id="collideWithTLTrigger21" priority="1">			
+			<activities>
+				<activity ref="activity21"/>
+				<activity ref="activity30"/>
+				<activity ref="activity31"/>
+				<activity ref="activity32"/>
+				<activity ref="activity33"/>
+				<activity ref="activity34"/>
+				<activity ref="activity35"/>
+				
+				<activity ref="activity36"/>
+				<activity ref="activity37"/>
+				<activity ref="activity38"/>
+				<activity ref="activity39"/>
+				<activity ref="activity40"/>
+				<activity ref="activity41"/>
+				<activity ref="activity42"/>
+				<activity ref="activity43"/>
+				<activity ref="activity44"/>
+				<activity ref="activity45"/>
+				<activity ref="activity46"/>
+				<activity ref="activity47"/>
+				
+				<activity ref="activity100"/>
+				<activity ref="activity101"/>
+				<activity ref="activity102"/>
+				<activity ref="activity103"/>
+				<activity ref="activity104"/>
+				<activity ref="activity105"/>
+				<activity ref="activity106"/>
+				<activity ref="activity107"/>
+				<activity ref="activity108"/>
+				<activity ref="activity109"/>
+			</activities>						
+			<condition>collideWith:redLightTrigger0</condition>
+		</trigger>
+		
+		<trigger id="collideWithTLTrigger20" priority="1">			
+			<activities>
+				<activity ref="activity20"/>				
+			</activities>						
+			<condition>collideWith:redLightTrigger0_0</condition>
+		</trigger>
+			
+		
+		<!-- 红绿灯触发1 -->
+		<trigger id="collideWithTestTL_1" priority="1">			
+			<activities>
+				<activity ref="activity09_1"/>				
+			</activities>						
+			<condition>collideWith:newTrigger_1</condition>
+		</trigger>
+		
+		<trigger id="collideWithTLTrigger21_1" priority="1">			
+			<activities>
+				<activity ref="activity21_1"/>
+				<activity ref="activity30_1"/>
+				<activity ref="activity31_1"/>
+				<activity ref="activity32_1"/>
+				<activity ref="activity33_1"/>
+				<activity ref="activity34_1"/>
+				<activity ref="activity35_1"/>
+				
+				<activity ref="activity36_1"/>
+				<activity ref="activity37_1"/>
+				<activity ref="activity38_1"/>
+				<activity ref="activity39_1"/>
+				<activity ref="activity40_1"/>
+				<activity ref="activity41_1"/>
+				<activity ref="activity42_1"/>
+				<activity ref="activity43_1"/>
+				<activity ref="activity44_1"/>
+				<activity ref="activity45_1"/>
+				<activity ref="activity46_1"/>
+				<activity ref="activity47_1"/>
+				
+				<activity ref="activity100"/>
+				<activity ref="activity101"/>
+				<activity ref="activity102"/>
+				<activity ref="activity103"/>
+				<activity ref="activity104"/>
+				<activity ref="activity105"/>
+				<activity ref="activity106"/>
+				<activity ref="activity107"/>
+				<activity ref="activity108"/>
+				<activity ref="activity109"/>
+			</activities>						
+			<condition>collideWith:redLightTrigger1</condition>
+		</trigger>
+		
+		<trigger id="collideWithTLTrigger20_1" priority="1">			
+			<activities>
+				<activity ref="activity20_1"/>				
+			</activities>						
+			<condition>collideWith:redLightTrigger1_0</condition>
+		</trigger>
+		
+		
+		
+		<!-- 红绿灯触发2 -->
+		<trigger id="collideWithTestTL_2" priority="1">			
+			<activities>
+				<activity ref="activity09_2"/>				
+			</activities>						
+			<condition>collideWith:newTrigger_2</condition>
+		</trigger>
+		
+		<trigger id="collideWithTLTrigger21_2" priority="1">			
+			<activities>
+				<activity ref="activity21_2"/>
+				<activity ref="activity30_2"/>
+				<activity ref="activity31_2"/>
+				<activity ref="activity32_2"/>
+				<activity ref="activity33_2"/>
+				<activity ref="activity34_2"/>
+				<activity ref="activity35_2"/>
+				
+				<activity ref="activity36_2"/>
+				<activity ref="activity37_2"/>
+				<activity ref="activity38_2"/>
+				<activity ref="activity39_2"/>
+				<activity ref="activity40_2"/>
+				<activity ref="activity41_2"/>
+				<activity ref="activity42_2"/>
+				<activity ref="activity43_2"/>
+				<activity ref="activity44_2"/>
+				<activity ref="activity45_2"/>
+				<activity ref="activity46_2"/>
+				<activity ref="activity47_2"/>
+				
+				<activity ref="activity100"/>
+				<activity ref="activity101"/>
+				<activity ref="activity102"/>
+				<activity ref="activity103"/>
+				<activity ref="activity104"/>
+				<activity ref="activity105"/>
+				<activity ref="activity106"/>
+				<activity ref="activity107"/>
+				<activity ref="activity108"/>
+				<activity ref="activity109"/>
+			</activities>						
+			<condition>collideWith:redLightTrigger2</condition>
+		</trigger>
+		
+		<trigger id="collideWithTLTrigger20_2" priority="1">			
+			<activities>
+				<activity ref="activity20_2"/>				
+			</activities>						
+			<condition>collideWith:redLightTrigger2_0</condition>
+		</trigger>
+		
+		
+		<!-- 红绿灯触发3 -->
+		<trigger id="collideWithTestTL_3" priority="1">			
+			<activities>
+				<activity ref="activity09_3"/>				
+			</activities>						
+			<condition>collideWith:newTrigger_3</condition>
+		</trigger>
+		
+		<trigger id="collideWithTLTrigger21_3" priority="1">			
+			<activities>
+				<activity ref="activity21_3"/>
+				<activity ref="activity30_3"/>
+				<activity ref="activity31_3"/>
+				<activity ref="activity32_3"/>
+				<activity ref="activity33_3"/>
+				<activity ref="activity34_3"/>
+				<activity ref="activity35_3"/>
+				
+				<activity ref="activity36_3"/>
+				<activity ref="activity37_3"/>
+				<activity ref="activity38_3"/>
+				<activity ref="activity39_3"/>
+				<activity ref="activity40_3"/>
+				<activity ref="activity41_3"/>
+				<activity ref="activity42_3"/>
+				<activity ref="activity43_3"/>
+				<activity ref="activity44_3"/>
+				<activity ref="activity45_3"/>
+				<activity ref="activity46_3"/>
+				<activity ref="activity47_3"/>
+				
+				<activity ref="activity100"/>
+				<activity ref="activity101"/>
+				<activity ref="activity102"/>
+				<activity ref="activity103"/>
+				<activity ref="activity104"/>
+				<activity ref="activity105"/>
+				<activity ref="activity106"/>
+				<activity ref="activity107"/>
+				<activity ref="activity108"/>
+				<activity ref="activity109"/>
+			</activities>						
+			<condition>collideWith:redLightTrigger3</condition>
+		</trigger>
+		
+		<trigger id="collideWithTLTrigger20_3" priority="1">			
+			<activities>
+				<activity ref="activity20_3"/>				
+			</activities>						
+			<condition>collideWith:redLightTrigger3_0</condition>
+		</trigger>
+		
+		
+		<!-- 红绿灯触发4 -->
+		<trigger id="collideWithTestTL_4" priority="1">			
+			<activities>
+				<activity ref="activity09_4"/>				
+			</activities>						
+			<condition>collideWith:newTrigger_4</condition>
+		</trigger>
+		
+		<trigger id="collideWithTLTrigger21_4" priority="1">			
+			<activities>
+				<activity ref="activity21_4"/>
+				<activity ref="activity30_4"/>
+				<activity ref="activity31_4"/>
+				<activity ref="activity32_4"/>
+				<activity ref="activity33_4"/>
+				<activity ref="activity34_4"/>
+				<activity ref="activity35_4"/>
+				
+				<activity ref="activity36_4"/>
+				<activity ref="activity37_4"/>
+				<activity ref="activity38_4"/>
+				<activity ref="activity39_4"/>
+				<activity ref="activity40_4"/>
+				<activity ref="activity41_4"/>
+				<activity ref="activity42_4"/>
+				<activity ref="activity43_4"/>
+				<activity ref="activity44_4"/>
+				<activity ref="activity45_4"/>
+				<activity ref="activity46_4"/>
+				<activity ref="activity47_4"/>
+				
+				<activity ref="activity100"/>
+				<activity ref="activity101"/>
+				<activity ref="activity102"/>
+				<activity ref="activity103"/>
+				<activity ref="activity104"/>
+				<activity ref="activity105"/>
+				<activity ref="activity106"/>
+				<activity ref="activity107"/>
+				<activity ref="activity108"/>
+				<activity ref="activity109"/>
+			</activities>						
+			<condition>collideWith:redLightTrigger4</condition>
+		</trigger>
+		
+		<trigger id="collideWithTLTrigger20_4" priority="1">			
+			<activities>
+				<activity ref="activity20_4"/>				
+			</activities>						
+			<condition>collideWith:redLightTrigger4_0</condition>
+		</trigger>
+
+		
+		
+		
+		
+		<trigger id="collideWithRecordingBox" priority="1">			
+			<activities>
+				<activity ref="activity00"/>
+			</activities>						
+			<condition>collideWith:tb</condition>
+		</trigger>
+		
+		
+		<!--  -->
+
+
+		
+		<trigger id="pressKeyB01" priority="2">
+			<activities>
+				<activity id="activityB01">
+					<action id="moveTraffic" delay="0" repeat="4">
+						<parameter name="trafficObjectID" value="car2" />
+						<parameter name="wayPointID" value="201" />
+					</action>
+				</activity>
+			</activities>	
+			<condition>pressKey:1</condition>
+		</trigger>
+		<trigger id="pressKeyB02" priority="2">
+			<activities>
+				<activity id="activityB02">
+					<action id="moveTraffic" delay="0" repeat="4">
+						<parameter name="trafficObjectID" value="car2" />
+						<parameter name="wayPointID" value="202" />
+					</action>
+				</activity>
+			</activities>	
+			<condition>pressKey:2</condition>
+		</trigger>
+		<trigger id="pressKeyB03" priority="2">
+			<activities>
+				<activity id="activityB03">
+					<action id="moveTraffic" delay="0" repeat="4">
+						<parameter name="trafficObjectID" value="car2" />
+						<parameter name="wayPointID" value="203" />
+					</action>
+				</activity>
+			</activities>	
+			<condition>pressKey:3</condition>
+		</trigger>
+		<trigger id="pressKeyB04" priority="2">
+			<activities>
+				<activity id="activityB04">
+					<action id="moveTraffic" delay="0" repeat="4">
+						<parameter name="trafficObjectID" value="car2" />
+						<parameter name="wayPointID" value="204" />
+					</action>
+				</activity>
+			</activities>	
+			<condition>pressKey:4</condition>
+		</trigger>
+		<trigger id="pressKeyB05" priority="2">
+			<activities>
+				<activity id="activityB05">
+					<action id="moveTraffic" delay="0" repeat="4">
+						<parameter name="trafficObjectID" value="car2" />
+						<parameter name="wayPointID" value="205" />
+					</action>
+				</activity>
+			</activities>	
+			<condition>pressKey:5</condition>
+		</trigger>
+		<trigger id="pressKeyB06" priority="2">
+			<activities>
+				<activity id="activityB06">
+					<action id="moveTraffic" delay="0" repeat="4">
+						<parameter name="trafficObjectID" value="car2" />
+						<parameter name="wayPointID" value="206" />
+					</action>
+				</activity>
+			</activities>	
+			<condition>pressKey:6</condition>
+		</trigger>
+		<trigger id="pressKeyB07" priority="2">
+			<activities>
+				<activity id="activityB07">
+					<action id="moveTraffic" delay="0" repeat="4">
+						<parameter name="trafficObjectID" value="car2" />
+						<parameter name="wayPointID" value="207" />
+					</action>
+				</activity>
+			</activities>	
+			<condition>pressKey:7</condition>
+		</trigger>
+		<trigger id="pressKeyB08" priority="2">
+			<activities>
+				<activity id="activityB08">
+					<action id="moveTraffic" delay="0" repeat="4">
+						<parameter name="trafficObjectID" value="car2" />
+						<parameter name="wayPointID" value="208" />
+					</action>
+				</activity>
+			</activities>	
+			<condition>pressKey:8</condition>
+		</trigger>
+		<trigger id="pressKeyB09" priority="2">
+			<activities>
+				<activity id="activityB09">
+					<action id="moveTraffic" delay="0" repeat="4">
+						<parameter name="trafficObjectID" value="car2" />
+						<parameter name="wayPointID" value="209" />
+					</action>
+				</activity>
+			</activities>	
+			<condition>pressKey:9</condition>
+		</trigger>
+
+
+		
+		
+	</triggers>
+	
+</interaction>

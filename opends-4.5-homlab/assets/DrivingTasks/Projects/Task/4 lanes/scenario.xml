@@ -1,0 +1,1509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario xmlns="http://opends.eu/drivingtask/scenario"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://opends.eu/drivingtask/scenario ../../Schema/scenario.xsd">
+        
+        <environment>
+        	<weather>
+                <snowingPercentage>-1</snowingPercentage>
+        		<rainingPercentage>-1</rainingPercentage>
+        		<fogPercentage>-1</fogPercentage>
+        	</weather>
+        </environment>
+
+        <driver>
+        	<idealTracks>
+        		<idealTrack id="idealTrack01">
+	        		<point ref="IdealPoint.001" />
+					<point ref="IdealPoint.032" />
+					<point ref="IdealPoint.033" />
+					<point ref="IdealPoint.034" />
+					<point ref="IdealPoint.035" />
+					<point ref="IdealPoint.052" />
+					<point ref="IdealPoint.053" />
+					<point ref="IdealPoint.054" />
+					<point ref="IdealPoint.055" />
+					<point ref="IdealPoint.056" />
+					<point ref="IdealPoint.057" />
+					<point ref="IdealPoint.058" />
+					<point ref="IdealPoint.113" />
+					<point ref="IdealPoint.114" />
+					<point ref="IdealPoint.115" />
+					<point ref="IdealPoint.116" />
+					<point ref="IdealPoint.138" />
+					<point ref="IdealPoint.139" />
+					<point ref="IdealPoint.140" />
+					<point ref="IdealPoint.141" />
+					<point ref="IdealPoint.142" />
+					<point ref="IdealPoint.143" />
+					<point ref="IdealPoint.150" />
+	        	</idealTrack>
+			</idealTracks>
+        	<car id="" ref="driverCar" profile="">
+        		<resetPoints>
+        			<resetPoint ref="reset1" />
+        			<resetPoint ref="reset2" />
+        		</resetPoints>
+        		<tires profile="">
+        			<type>winter</type>
+        			<size>16</size>
+        		</tires>
+        		<engine profile="">
+        			<engineOn>true</engineOn>
+        			<minSpeed>0</minSpeed>
+					<maxSpeed>180</maxSpeed>
+					<acceleration>3.3</acceleration>
+					<minRPM>750</minRPM>
+					<maxRPM>7500</maxRPM>
+        		</engine>
+        		<transmission>
+        			<automatic>true</automatic>
+        			<reverse>3.182</reverse>
+        			<forward>
+	        			<vector jtype="java_lang_Float" size="6">
+							<entry>3.615</entry>
+							<entry>1.955</entry>
+							<entry>1.281</entry>
+							<entry>0.973</entry>
+							<entry>0.778</entry>
+							<entry>0.646</entry>
+						</vector>
+					</forward>
+        		</transmission>
+        		<suspension>
+					<stiffness>120</stiffness>
+					<compression>0.2</compression>
+					<damping>0.3</damping>
+        		</suspension>
+        		<wheel>
+        			<frictionSlip>50</frictionSlip>
+        		</wheel>
+        		<brake profile="">
+        			<decelerationFreeWheel>2.0</decelerationFreeWheel>
+        			<decelerationBrake>8.7</decelerationBrake>
+        		</brake>
+        	</car>
+        </driver>
+        
+        <traffic>
+        	<pedestrian id="pedestrian01">
+        		<modelPath>Models/Humans/male/male.scene</modelPath>
+				<mass>50</mass>
+				<animationStand>Stand</animationStand>
+				<animationWalk>WalkBaked</animationWalk>
+				<scale>0.9</scale>
+				<maxDistanceFromPath>1.1</maxDistanceFromPath>
+				<curveTension>0.1</curveTension>
+				<pathIsCycle>true</pathIsCycle>
+				<pathIsVisible>false</pathIsVisible>
+				<startWayPoint>WayPoint_1</startWayPoint>
+				<wayPoints>
+					<wayPoint id="WayPoint_1"><translation><vector jtype="java_lang_Float" size="3"><entry>1023</entry><entry>0</entry><entry>1275</entry></vector></translation><speed>6</speed></wayPoint>
+					<wayPoint id="WayPoint_2"><translation><vector jtype="java_lang_Float" size="3"><entry>1073</entry><entry>0</entry><entry>1275</entry></vector></translation><speed>6</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>
+					<wayPoint id="WayPoint_3"><translation><vector jtype="java_lang_Float" size="3"><entry>1165</entry><entry>0</entry><entry>1275</entry></vector></translation><speed>6</speed></wayPoint>
+					<wayPoint id="WayPoint_4"><translation><vector jtype="java_lang_Float" size="3"><entry>1094</entry><entry>0</entry><entry>1275</entry></vector></translation><speed>6</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>					
+				</wayPoints>											
+        	</pedestrian>
+     	
+        	<pedestrian id="pedestrian04">
+        		<modelPath>Models/Humans/male1/male.scene</modelPath>
+				<mass>50</mass>
+				<animationStand>Stand</animationStand>
+				<animationWalk>WalkBaked</animationWalk>
+				<scale>0.9</scale>
+				<maxDistanceFromPath>1.1</maxDistanceFromPath>
+				<curveTension>0.1</curveTension>
+				<pathIsCycle>true</pathIsCycle>
+				<pathIsVisible>false</pathIsVisible>
+				<startWayPoint>WayPoint_31</startWayPoint>
+				<wayPoints>
+					<wayPoint id="WayPoint_31"><translation><vector jtype="java_lang_Float" size="3"><entry>1018</entry><entry>0</entry><entry>1320</entry></vector></translation><speed>6</speed></wayPoint>
+					<wayPoint id="WayPoint_32"><translation><vector jtype="java_lang_Float" size="3"><entry>1073</entry><entry>0</entry><entry>1320</entry></vector></translation><speed>6</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>
+					<wayPoint id="WayPoint_33"><translation><vector jtype="java_lang_Float" size="3"><entry>1180</entry><entry>0</entry><entry>1320</entry></vector></translation><speed>6</speed></wayPoint>
+					<wayPoint id="WayPoint_34"><translation><vector jtype="java_lang_Float" size="3"><entry>1124</entry><entry>0</entry><entry>1320</entry></vector></translation><speed>6</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>					
+				</wayPoints>											
+        	</pedestrian>
+        	
+        	<pedestrian id="pedestrian05">
+        		<modelPath>Models/Humans/female/female.scene</modelPath>
+				<mass>50</mass>
+				<animationStand>Stand</animationStand>
+				<animationWalk>WalkBaked</animationWalk>
+				<scale>0.9</scale>
+				<maxDistanceFromPath>1.1</maxDistanceFromPath>
+				<curveTension>0.1</curveTension>
+				<pathIsCycle>true</pathIsCycle>
+				<pathIsVisible>false</pathIsVisible>
+				<startWayPoint>WayPoint_43</startWayPoint>
+				<wayPoints>
+					<wayPoint id="WayPoint_41"><translation><vector jtype="java_lang_Float" size="3"><entry>1018</entry><entry>0</entry><entry>1320.5</entry></vector></translation><speed>6</speed></wayPoint>
+					<wayPoint id="WayPoint_42"><translation><vector jtype="java_lang_Float" size="3"><entry>1703</entry><entry>0</entry><entry>1320.5</entry></vector></translation><speed>6</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>
+					<wayPoint id="WayPoint_43"><translation><vector jtype="java_lang_Float" size="3"><entry>1180</entry><entry>0</entry><entry>1320.5</entry></vector></translation><speed>6</speed></wayPoint>
+					<wayPoint id="WayPoint_44"><translation><vector jtype="java_lang_Float" size="3"><entry>1124</entry><entry>0</entry><entry>1320.5</entry></vector></translation><speed>6</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>					
+				</wayPoints>											
+        	</pedestrian>
+        	
+        	
+        	<!-- 竖直方向 -->
+        	<pedestrian id="pedestrian06">
+        		<modelPath>Models/Humans/male2/male.scene</modelPath>
+				<mass>50</mass>
+				<animationStand>Stand</animationStand>
+				<animationWalk>WalkBaked</animationWalk>
+				<scale>0.9</scale>
+				<maxDistanceFromPath>1.1</maxDistanceFromPath>
+				<curveTension>0.1</curveTension>
+				<pathIsCycle>true</pathIsCycle>
+				<pathIsVisible>false</pathIsVisible>
+				<startWayPoint>WayPoint_51</startWayPoint>
+				<wayPoints>
+					<wayPoint id="WayPoint_51"><translation><vector jtype="java_lang_Float" size="3"><entry>1070</entry><entry>0</entry><entry>1215</entry></vector></translation><speed>6</speed></wayPoint>
+					<wayPoint id="WayPoint_52"><translation><vector jtype="java_lang_Float" size="3"><entry>1070</entry><entry>0</entry><entry>1280</entry></vector></translation><speed>6</speed><trafficLight>TrafficLight.02_04</trafficLight></wayPoint>
+					<wayPoint id="WayPoint_53"><translation><vector jtype="java_lang_Float" size="3"><entry>1070</entry><entry>0</entry><entry>1365</entry></vector></translation><speed>6</speed></wayPoint>
+					<wayPoint id="WayPoint_54"><translation><vector jtype="java_lang_Float" size="3"><entry>1070</entry><entry>0</entry><entry>1325</entry></vector></translation><speed>6</speed><trafficLight>TrafficLight.02_03</trafficLight></wayPoint>					
+				</wayPoints>											
+        	</pedestrian>
+        	
+        	<pedestrian id="pedestrian07">
+        		<modelPath>Models/Humans/female2/female.scene</modelPath>
+				<mass>50</mass>
+				<animationStand>Stand</animationStand>
+				<animationWalk>WalkBaked</animationWalk>
+				<scale>0.9</scale>
+				<maxDistanceFromPath>1.1</maxDistanceFromPath>
+				<curveTension>0.1</curveTension>
+				<pathIsCycle>true</pathIsCycle>
+				<pathIsVisible>false</pathIsVisible>
+				<startWayPoint>WayPoint_61</startWayPoint>
+				<wayPoints>
+					<wayPoint id="WayPoint_61"><translation><vector jtype="java_lang_Float" size="3"><entry>1070.5</entry><entry>0</entry><entry>1225</entry></vector></translation><speed>6.2</speed></wayPoint>
+					<wayPoint id="WayPoint_62"><translation><vector jtype="java_lang_Float" size="3"><entry>1070.5</entry><entry>0</entry><entry>1280</entry></vector></translation><speed>6.2</speed><trafficLight>TrafficLight.02_04</trafficLight></wayPoint>
+					<wayPoint id="WayPoint_63"><translation><vector jtype="java_lang_Float" size="3"><entry>1070.5</entry><entry>0</entry><entry>1375</entry></vector></translation><speed>6.2</speed></wayPoint>
+					<wayPoint id="WayPoint_64"><translation><vector jtype="java_lang_Float" size="3"><entry>1070.5</entry><entry>0</entry><entry>1325</entry></vector></translation><speed>6.2</speed><trafficLight>TrafficLight.02_03</trafficLight></wayPoint>					
+				</wayPoints>											
+        	</pedestrian>
+        	
+        	<pedestrian id="pedestrian08">
+        		<modelPath>Models/Humans/female1/female.scene</modelPath>
+				<mass>50</mass>
+				<animationStand>Stand</animationStand>
+				<animationWalk>WalkBaked</animationWalk>
+				<scale>0.9</scale>
+				<maxDistanceFromPath>1.1</maxDistanceFromPath>
+				<curveTension>0.1</curveTension>
+				<pathIsCycle>true</pathIsCycle>
+				<pathIsVisible>false</pathIsVisible>
+				<startWayPoint>WayPoint_73</startWayPoint>
+				<wayPoints>
+					<wayPoint id="WayPoint_71"><translation><vector jtype="java_lang_Float" size="3"><entry>1071.5</entry><entry>0</entry><entry>1230</entry></vector></translation><speed>6.5</speed></wayPoint>
+					<wayPoint id="WayPoint_72"><translation><vector jtype="java_lang_Float" size="3"><entry>1071.5</entry><entry>0</entry><entry>1280</entry></vector></translation><speed>6.5</speed><trafficLight>TrafficLight.02_04</trafficLight></wayPoint>
+					<wayPoint id="WayPoint_73"><translation><vector jtype="java_lang_Float" size="3"><entry>1071.5</entry><entry>0</entry><entry>1375</entry></vector></translation><speed>6.5</speed></wayPoint>
+					<wayPoint id="WayPoint_74"><translation><vector jtype="java_lang_Float" size="3"><entry>1071.5</entry><entry>0</entry><entry>1325</entry></vector></translation><speed>6.5</speed><trafficLight>TrafficLight.02_03</trafficLight></wayPoint>					
+				</wayPoints>											
+        	</pedestrian>
+        	
+        	
+  	
+        	
+        	<vehicle id="car3"> <!-- 直行，超车的灵车 -->
+				<modelPath>Models/Cars/drivingCars/AudiS6/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>207</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="200"><speed>80</speed></wayPoint>					
+					<wayPoint ref="201"><speed>80</speed></wayPoint>
+					<wayPoint ref="202"><speed>80</speed></wayPoint>
+					<wayPoint ref="203"><speed>80</speed></wayPoint>
+					<wayPoint ref="204"><speed>120</speed></wayPoint>					
+					<wayPoint ref="205"><speed>120</speed><trafficLight>TrafficLight.03_04</trafficLight></wayPoint>
+					<wayPoint ref="206"><speed>120</speed></wayPoint>
+					<wayPoint ref="207"><speed>120</speed></wayPoint>
+					
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car4"> <!-- 直行，超车的灵车2 -->
+				<modelPath>Models/Cars/drivingCars/AudiS6/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>307</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="300"><speed>80</speed></wayPoint>					
+					<wayPoint ref="301"><speed>80</speed></wayPoint>
+					<wayPoint ref="302"><speed>80</speed></wayPoint>
+					<wayPoint ref="303"><speed>80</speed></wayPoint>
+					<wayPoint ref="304"><speed>120</speed></wayPoint>
+					<wayPoint ref="305"><speed>120</speed><trafficLight>TrafficLight.03_04</trafficLight></wayPoint>
+					<wayPoint ref="306"><speed>120</speed></wayPoint>
+					<wayPoint ref="307"><speed>120</speed></wayPoint>
+					
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car3_1"> <!-- 左转，超车的灵车 -->
+				<modelPath>Models/Cars/drivingCars/AudiS6/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>407</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="400"><speed>80</speed></wayPoint>					
+					<wayPoint ref="401"><speed>80</speed></wayPoint>
+					<wayPoint ref="402"><speed>80</speed></wayPoint>
+					<wayPoint ref="403"><speed>80</speed></wayPoint>
+					<wayPoint ref="404"><speed>120</speed></wayPoint>
+					<wayPoint ref="405"><speed>120</speed><trafficLight>TrafficLight.01_01</trafficLight></wayPoint>
+					<wayPoint ref="406"><speed>120</speed></wayPoint>	
+					<wayPoint ref="407"><speed>120</speed></wayPoint>
+					
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car4_1"> <!-- 左转，超车的灵车2 -->
+				<modelPath>Models/Cars/drivingCars/AudiS6/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>507</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="500"><speed>80</speed></wayPoint>					
+					<wayPoint ref="501"><speed>80</speed></wayPoint>
+					<wayPoint ref="502"><speed>80</speed></wayPoint>
+					<wayPoint ref="503"><speed>80</speed></wayPoint>
+					<wayPoint ref="504"><speed>120</speed></wayPoint>
+					<wayPoint ref="505"><speed>120</speed><trafficLight>TrafficLight.01_01</trafficLight></wayPoint>
+					<wayPoint ref="506"><speed>120</speed></wayPoint>	
+					<wayPoint ref="507"><speed>120</speed></wayPoint>					
+				</wayPoints>
+        	</vehicle>
+        	
+        	<!-- 4车道的超车 -->
+        	<vehicle id="car3_2"> <!-- 直行，超车的灵车3 -->
+				<modelPath>Models/Cars/drivingCars/AudiS6/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>207-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="200-1"><speed>80</speed></wayPoint>					
+					<wayPoint ref="201-1"><speed>80</speed></wayPoint>
+					<wayPoint ref="202-1"><speed>80</speed></wayPoint>
+					<wayPoint ref="203-1"><speed>80</speed></wayPoint>
+					<wayPoint ref="204-1"><speed>120</speed></wayPoint>					
+					<wayPoint ref="205-1"><speed>120</speed><trafficLight>TrafficLight.03_04</trafficLight></wayPoint>
+					<wayPoint ref="206-1"><speed>120</speed></wayPoint>
+					<wayPoint ref="207-1"><speed>120</speed></wayPoint>
+					
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car4_2"> <!-- 直行，超车的灵车4 -->
+				<modelPath>Models/Cars/drivingCars/AudiS6/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>307-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="300-1"><speed>80</speed></wayPoint>					
+					<wayPoint ref="301-1"><speed>80</speed></wayPoint>
+					<wayPoint ref="302-1"><speed>80</speed></wayPoint>
+					<wayPoint ref="303-1"><speed>80</speed></wayPoint>
+					<wayPoint ref="304-1"><speed>120</speed></wayPoint>
+					<wayPoint ref="305-1"><speed>120</speed><trafficLight>TrafficLight.03_04</trafficLight></wayPoint>
+					<wayPoint ref="306-1"><speed>120</speed></wayPoint>
+					<wayPoint ref="307-1"><speed>120</speed></wayPoint>
+					
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car3_3"> <!-- 左转，超车的灵车3 -->
+				<modelPath>Models/Cars/drivingCars/AudiS6/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>407-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="400-1"><speed>80</speed></wayPoint>					
+					<wayPoint ref="401-1"><speed>80</speed></wayPoint>
+					<wayPoint ref="402-1"><speed>80</speed></wayPoint>
+					<wayPoint ref="403-1"><speed>80</speed></wayPoint>
+					<wayPoint ref="404-1"><speed>120</speed></wayPoint>
+					<wayPoint ref="405-1"><speed>120</speed><trafficLight>TrafficLight.01_01</trafficLight></wayPoint>
+					<wayPoint ref="406-1"><speed>120</speed></wayPoint>	
+					<wayPoint ref="407-1"><speed>120</speed></wayPoint>
+					
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car4_3"> <!-- 左转，超车的灵车4 -->
+				<modelPath>Models/Cars/drivingCars/AudiS6/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>507-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="500-1"><speed>80</speed></wayPoint>					
+					<wayPoint ref="501-1"><speed>80</speed></wayPoint>
+					<wayPoint ref="502-1"><speed>80</speed></wayPoint>
+					<wayPoint ref="503-1"><speed>80</speed></wayPoint>
+					<wayPoint ref="504-1"><speed>120</speed></wayPoint>
+					<wayPoint ref="505-1"><speed>120</speed><trafficLight>TrafficLight.01_01</trafficLight></wayPoint>
+					<wayPoint ref="506-1"><speed>120</speed></wayPoint>	
+					<wayPoint ref="507-1"><speed>120</speed></wayPoint>					
+				</wayPoints>
+			</vehicle>
+				
+				
+				
+        	<vehicle id="car5"> <!-- 左转直行，大卡车1 -->
+				<modelPath>Models/Cars/drivingCars/Truck/Car.scene</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>604</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="601"><speed>50</speed></wayPoint>
+					<wayPoint ref="602"><speed>50</speed><trafficLight>TrafficLight.02_04</trafficLight></wayPoint>
+					<wayPoint ref="604"><speed>50</speed></wayPoint>
+					
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car6"> <!-- 左转直行，大卡车2 -->
+				<modelPath>Models/Cars/drivingCars/Truck/Car.scene</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>704</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="701"><speed>50</speed></wayPoint>
+					<wayPoint ref="702"><speed>50</speed><trafficLight>TrafficLight.02_04</trafficLight></wayPoint>
+					<wayPoint ref="704"><speed>50</speed></wayPoint>									
+				</wayPoints>
+        	</vehicle>
+        	<vehicle id="car5_2"> <!-- 左转直行，大卡车3 -->
+				<modelPath>Models/Cars/drivingCars/Truck/Car.scene</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>604-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="601-1"><speed>50</speed></wayPoint>
+					<wayPoint ref="602-1"><speed>50</speed><trafficLight>TrafficLight.02_04</trafficLight></wayPoint>
+					<wayPoint ref="604-1"><speed>50</speed></wayPoint>
+					
+				</wayPoints>
+        	</vehicle>        	
+        	<vehicle id="car6_2"> <!-- 左转直行，大卡车4 -->
+				<modelPath>Models/Cars/drivingCars/Truck/Car.scene</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>704-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="701-1"><speed>50</speed></wayPoint>
+					<wayPoint ref="702-1"><speed>50</speed><trafficLight>TrafficLight.02_04</trafficLight></wayPoint>
+					<wayPoint ref="704-1"><speed>50</speed></wayPoint>									
+				</wayPoints>
+        	</vehicle>
+        	<!-- 直行左转的大卡车 -->
+        	<vehicle id="car5_1"> <!-- 直行左转，大卡车1 -->
+				<modelPath>Models/Cars/drivingCars/Truck/Car.scene</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>804</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="801"><speed>50</speed></wayPoint>
+					<wayPoint ref="802"><speed>50</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>
+					<wayPoint ref="804"><speed>50</speed></wayPoint>
+					
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car6_1"> <!-- 直行左转，大卡车2 -->
+				<modelPath>Models/Cars/drivingCars/Truck/Car.scene</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>904</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="901"><speed>50</speed></wayPoint>
+					<wayPoint ref="902"><speed>50</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>
+					<wayPoint ref="904"><speed>50</speed></wayPoint>									
+				</wayPoints>
+        	</vehicle>
+        	<!-- 四车道的 -->
+        	<vehicle id="car5_3"> <!-- 直行左转，大卡车3 -->
+				<modelPath>Models/Cars/drivingCars/Truck/Car.scene</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>804-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="801-1"><speed>30</speed></wayPoint>
+					<wayPoint ref="802-1"><speed>30</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>
+					<wayPoint ref="804-1"><speed>30</speed></wayPoint>
+					
+				</wayPoints>
+        	</vehicle>        	
+        	<vehicle id="car6_3"> <!-- 直行左转，大卡车4 -->
+				<modelPath>Models/Cars/drivingCars/Truck/Car.scene</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>904-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="901-1"><speed>50</speed></wayPoint>
+					<wayPoint ref="902-1"><speed>50</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>
+					<wayPoint ref="904-1"><speed>50</speed></wayPoint>									
+				</wayPoints>
+        	</vehicle>
+			
+			<!-- 道路上其他灵车 -->
+			<!-- 直行方向 -->
+			<vehicle id="car7">
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>1004</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="1001"><speed>72</speed></wayPoint>
+					
+					<wayPoint ref="1002"><speed>100</speed></wayPoint>
+					<wayPoint ref="1004"><speed>72</speed></wayPoint>					
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car8"> 
+				<modelPath>Models/Cars/drivingCars/AudiS6/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>1104</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="1101"><speed>72</speed></wayPoint>
+					<wayPoint ref="1103"><speed>100</speed></wayPoint>
+					
+					<wayPoint ref="1104"><speed>72</speed></wayPoint>					
+				</wayPoints>
+        	</vehicle>
+        	
+			<vehicle id="car11">
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>1104</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="1701"><speed>72</speed></wayPoint>
+					<wayPoint ref="1103"><speed>100</speed></wayPoint>
+					
+					<wayPoint ref="1104"><speed>72</speed></wayPoint>					
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car12"> 
+				<modelPath>Models/Cars/drivingCars/bmw1/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>1004</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="1801"><speed>72</speed></wayPoint>
+					
+					<wayPoint ref="1008"><speed>100</speed></wayPoint>
+					<wayPoint ref="1010"><speed>72</speed></wayPoint>	
+					<wayPoint ref="1004"><speed>72</speed></wayPoint>	
+							
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car13"> 
+				<modelPath>Models/Cars/drivingCars/AudiS6/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>4002</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="4001"><speed>73</speed></wayPoint>
+					<wayPoint ref="4002"><speed>73</speed></wayPoint>				
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car18"> 
+				<modelPath>Models/Cars/drivingCars/bmw1/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>3902</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="3901"><speed>77</speed></wayPoint>
+					<wayPoint ref="3902"><speed>77</speed></wayPoint>									
+				</wayPoints>
+        	</vehicle>
+        	
+        	
+        	<!-- 左转方向 -->
+        	<vehicle id="car7_1"> 
+				<modelPath>Models/Cars/drivingCars/bmw1/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>1204</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="1201"><speed>72</speed></wayPoint>
+					<wayPoint ref="1205"><speed>100</speed></wayPoint>
+					<!--wayPoint ref="1202"><speed>40</speed><trafficLight>TrafficLight.01_01</trafficLight></wayPoint-->
+					<wayPoint ref="1204"><speed>72</speed></wayPoint>					
+					
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car8_1"> 
+				<modelPath>Models/Cars/drivingCars/AudiS6/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>1304</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="1301"><speed>72</speed></wayPoint>
+					<wayPoint ref="1305"><speed>100</speed></wayPoint>
+					<!--wayPoint ref="1302"><speed>40</speed><trafficLight>TrafficLight.01_01</trafficLight></wayPoint-->
+					<wayPoint ref="1304"><speed>72</speed></wayPoint>			
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car11_1"> 
+				<modelPath>Models/Cars/drivingCars/bmw1/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>1304</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="1901"><speed>72</speed></wayPoint>
+					<wayPoint ref="1305"><speed>100</speed></wayPoint>
+					<!--wayPoint ref="1302"><speed>40</speed><trafficLight>TrafficLight.01_01</trafficLight></wayPoint-->
+					<wayPoint ref="1304"><speed>72</speed></wayPoint>					
+					
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car12_1"> 
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>1204</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="2001"><speed>72</speed></wayPoint>
+					<wayPoint ref="1205"><speed>100</speed></wayPoint>
+					<!--wayPoint ref="1202"><speed>40</speed><trafficLight>TrafficLight.01_01</trafficLight></wayPoint-->
+					<wayPoint ref="1204"><speed>72</speed></wayPoint>
+				</wayPoints>
+        	</vehicle>
+        	<vehicle id="car13_1"> 
+				<modelPath>Models/Cars/drivingCars/AudiS6/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>4102</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="4101"><speed>67</speed></wayPoint>
+					
+					<wayPoint ref="4102"><speed>67</speed></wayPoint>									
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car18_1"> 
+				<modelPath>Models/Cars/drivingCars/bmw1/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>4202</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="4201"><speed>65</speed></wayPoint>
+					<wayPoint ref="4202"><speed>65</speed></wayPoint>									
+				</wayPoints>
+        	</vehicle>
+        	<!-- 四车道超车路段的灵车 -->
+        	<vehicle id="car7_2">
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>1004-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="1001-1"><speed>72</speed></wayPoint>
+					
+					<wayPoint ref="1002-1"><speed>100</speed></wayPoint>
+					<wayPoint ref="1004-1"><speed>72</speed></wayPoint>					
+				</wayPoints>
+        	</vehicle>
+        	<vehicle id="car8_2"> 
+				<modelPath>Models/Cars/drivingCars/AudiS6/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>1104-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="1101-1"><speed>72</speed></wayPoint>
+					<wayPoint ref="1103-1"><speed>100</speed></wayPoint>
+					
+					<wayPoint ref="1104-1"><speed>72</speed></wayPoint>					
+				</wayPoints>
+        	</vehicle>
+        	<vehicle id="car11_2">
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>1104-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="1701-1"><speed>72</speed></wayPoint>
+					<wayPoint ref="1103-1"><speed>100</speed></wayPoint>
+					
+					<wayPoint ref="1104-1"><speed>72</speed></wayPoint>					
+				</wayPoints>
+        	</vehicle>
+        	<vehicle id="car12_2"> 
+				<modelPath>Models/Cars/drivingCars/bmw1/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>1004-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="1801-1"><speed>72</speed></wayPoint>
+					
+					<wayPoint ref="1008-1"><speed>100</speed></wayPoint>
+					<wayPoint ref="1010-1"><speed>72</speed></wayPoint>	
+					<wayPoint ref="1004-1"><speed>72</speed></wayPoint>								
+				</wayPoints>
+        	</vehicle>
+        	
+        	
+        	<vehicle id="car7_3"> 
+				<modelPath>Models/Cars/drivingCars/bmw1/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>1204-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="1201-1"><speed>72</speed></wayPoint>
+					<wayPoint ref="1205-1"><speed>100</speed></wayPoint>
+					<wayPoint ref="1204-1"><speed>72</speed></wayPoint>					
+					
+				</wayPoints>
+        	</vehicle>       
+        	<vehicle id="car8_3"> 
+				<modelPath>Models/Cars/drivingCars/AudiS6/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>1304-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="1301-1"><speed>72</speed></wayPoint>
+					<wayPoint ref="1305-1"><speed>100</speed></wayPoint>
+					<!--wayPoint ref="1302"><speed>40</speed><trafficLight>TrafficLight.01_01</trafficLight></wayPoint-->
+					<wayPoint ref="1304-1"><speed>72</speed></wayPoint>			
+				</wayPoints>
+        	</vehicle>
+        	<vehicle id="car11_3"> 
+				<modelPath>Models/Cars/drivingCars/bmw1/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>1304-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="1901-1"><speed>72</speed></wayPoint>
+					<wayPoint ref="1305-1"><speed>100</speed></wayPoint>
+					<wayPoint ref="1304-1"><speed>72</speed></wayPoint>					
+					
+				</wayPoints>
+        	</vehicle>
+        	<vehicle id="car12_3"> 
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>1204-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="2001-1"><speed>72</speed></wayPoint>
+					<wayPoint ref="1205-1"><speed>100</speed></wayPoint>
+					<!--wayPoint ref="1202"><speed>40</speed><trafficLight>TrafficLight.01_01</trafficLight></wayPoint-->
+					<wayPoint ref="1204-1"><speed>72</speed></wayPoint>
+				</wayPoints>
+        	</vehicle>
+        	
+        	
+        	<!-- 大卡车路段的灵车 -->
+        	<vehicle id="car14"> 
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>704</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="2501"><speed>53</speed></wayPoint>
+					<wayPoint ref="702"><speed>53</speed><trafficLight>TrafficLight.02_04</trafficLight></wayPoint>
+					<wayPoint ref="704"><speed>53</speed></wayPoint>					
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car15"> 
+				<modelPath>Models/Cars/drivingCars/bmw1/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>704</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="2701"><speed>53</speed></wayPoint>
+					<wayPoint ref="702"><speed>53</speed><trafficLight>TrafficLight.02_04</trafficLight></wayPoint>
+					<wayPoint ref="704"><speed>53</speed></wayPoint>									
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car16"> 
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>604</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="2601"><speed>53</speed></wayPoint>
+					<wayPoint ref="602"><speed>53</speed><trafficLight>TrafficLight.02_04</trafficLight></wayPoint>
+					<wayPoint ref="604"><speed>53</speed></wayPoint>					
+				</wayPoints>
+        	</vehicle>      	
+        	<vehicle id="car17"> 
+				<modelPath>Models/Cars/drivingCars/bmw1/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>604</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="2801"><speed>53</speed></wayPoint>
+					<wayPoint ref="602"><speed>53</speed><trafficLight>TrafficLight.02_04</trafficLight></wayPoint>
+					<wayPoint ref="604"><speed>53</speed></wayPoint>									
+				</wayPoints>
+        	</vehicle>
+        	
+        	<!-- 四车道的 -->
+        	<vehicle id="car14_2"> 
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>704-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="2501-1"><speed>53</speed></wayPoint>
+					<wayPoint ref="702-1"><speed>53</speed><trafficLight>TrafficLight.02_04</trafficLight></wayPoint>
+					<wayPoint ref="704-1"><speed>53</speed></wayPoint>					
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car15_2"> 
+				<modelPath>Models/Cars/drivingCars/bmw1/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>704-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="2701-1"><speed>53</speed></wayPoint>
+					<wayPoint ref="702-1"><speed>53</speed><trafficLight>TrafficLight.02_04</trafficLight></wayPoint>
+					<wayPoint ref="704-1"><speed>53</speed></wayPoint>									
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car16_2"> 
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>604-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="2601-1"><speed>53</speed></wayPoint>
+					<wayPoint ref="602-1"><speed>53</speed><trafficLight>TrafficLight.02_04</trafficLight></wayPoint>
+					<wayPoint ref="604-1"><speed>53</speed></wayPoint>					
+				</wayPoints>
+        	</vehicle>      	
+        	<vehicle id="car17_2"> 
+				<modelPath>Models/Cars/drivingCars/bmw1/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>604-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="2801-1"><speed>53</speed></wayPoint>
+					<wayPoint ref="602-1"><speed>53</speed><trafficLight>TrafficLight.02_04</trafficLight></wayPoint>
+					<wayPoint ref="604-1"><speed>53</speed></wayPoint>									
+				</wayPoints>
+        	</vehicle>
+        	
+        	
+			<vehicle id="car19"> 
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>4302</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="4301"><speed>60</speed></wayPoint>
+					<wayPoint ref="4302"><speed>60</speed></wayPoint>					
+				</wayPoints>
+        	</vehicle>      	
+        	<vehicle id="car20"> 
+				<modelPath>Models/Cars/drivingCars/bmw1/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>4402</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="4401"><speed>65</speed></wayPoint>
+					<wayPoint ref="4402"><speed>65</speed></wayPoint>									
+				</wayPoints>
+        	</vehicle>        
+        	
+        	
+        	<vehicle id="car14_1"> 
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>804</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="2901"><speed>53</speed></wayPoint>
+					<wayPoint ref="802"><speed>53</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>
+					<wayPoint ref="804"><speed>53</speed></wayPoint>					
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car15_1"> 
+				<modelPath>Models/Cars/drivingCars/bmw1/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>804</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="3101"><speed>53</speed></wayPoint>
+					<wayPoint ref="802"><speed>53</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>
+					<wayPoint ref="804"><speed>53</speed></wayPoint>									
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car16_1"> 
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>904</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="3001"><speed>53</speed></wayPoint>
+					<wayPoint ref="902"><speed>53</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>
+					<wayPoint ref="904"><speed>53</speed></wayPoint>				
+				</wayPoints>
+        	</vehicle>      	
+        	<vehicle id="car17_1"> 
+				<modelPath>Models/Cars/drivingCars/bmw1/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>904</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="3201"><speed>53</speed></wayPoint>
+					<wayPoint ref="902"><speed>53</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>
+					<wayPoint ref="904"><speed>53</speed></wayPoint>									
+				</wayPoints>
+        	</vehicle>
+        	
+        	<!-- 四车道的灵车 -->
+        	<vehicle id="car14_3"> 
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>804-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="2901-1"><speed>53</speed></wayPoint>
+					<wayPoint ref="802-1"><speed>53</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>
+					<wayPoint ref="804-1"><speed>53</speed></wayPoint>					
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car15_3"> 
+				<modelPath>Models/Cars/drivingCars/bmw1/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>804-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="3101-1"><speed>53</speed></wayPoint>
+					<wayPoint ref="802-1"><speed>53</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>
+					<wayPoint ref="804-1"><speed>53</speed></wayPoint>									
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car16_3"> 
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>904-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="3001-1"><speed>53</speed></wayPoint>
+					<wayPoint ref="902-1"><speed>53</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>
+					<wayPoint ref="904-1"><speed>53</speed></wayPoint>				
+				</wayPoints>
+        	</vehicle>      	
+        	<vehicle id="car17_3"> 
+				<modelPath>Models/Cars/drivingCars/bmw1/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>904-1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="3201-1"><speed>53</speed></wayPoint>
+					<wayPoint ref="902-1"><speed>53</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>
+					<wayPoint ref="904-1"><speed>53</speed></wayPoint>									
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car19_1"> 
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>4502</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="4501"><speed>60</speed></wayPoint>
+					<wayPoint ref="4502"><speed>60</speed></wayPoint>					
+				</wayPoints>
+        	</vehicle>      	
+        	<vehicle id="car20_1"> 
+				<modelPath>Models/Cars/drivingCars/bmw1/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>4602</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="4601"><speed>65</speed></wayPoint>
+					<wayPoint ref="4602"><speed>65</speed></wayPoint>									
+				</wayPoints>
+        	</vehicle>   
+        	<!-- 封堵卡车路段另一条超车路线的车 -->     
+       		<vehicle id="car39_1"> 
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>704</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="701"><speed>49</speed></wayPoint>
+					<wayPoint ref="702"><speed>49</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>
+					<wayPoint ref="704"><speed>49</speed></wayPoint>					
+				</wayPoints>
+        	</vehicle>
+        	<vehicle id="car39_2"> 
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>604</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="601"><speed>49</speed></wayPoint>
+					<wayPoint ref="602"><speed>49</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>
+					<wayPoint ref="604"><speed>49</speed></wayPoint>					
+				</wayPoints>
+        	</vehicle>
+        	
+        	<vehicle id="car40_1"> 
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>804</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="801"><speed>49</speed></wayPoint>
+					<wayPoint ref="802"><speed>49</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>
+					<wayPoint ref="804"><speed>49</speed></wayPoint>					
+				</wayPoints>
+        	</vehicle>
+        	<vehicle id="car40_2"> 
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>20</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.05</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>904</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="901"><speed>49</speed></wayPoint>
+					<wayPoint ref="902"><speed>49</speed><trafficLight>TrafficLight.02_01</trafficLight></wayPoint>
+					<wayPoint ref="904"><speed>49</speed></wayPoint>					
+				</wayPoints>
+        	</vehicle>
+
+        </traffic>
+   
+        <road>
+             <!-- 新加的 -->
+        <intersection id="Intersection0" mode="trigger">
+       		<phases>				
+				<phase id="02" duration="50" state="rrrx"/>
+				<phase id="03" duration="50" state="rrry"/>
+				<phase id="04" duration="300" state="rrrg"/>
+				
+			</phases>
+			<trafficLights>
+        		<trafficLight id="TrafficLight.00_01" phasePosition="1">
+        			<initialState>red</initialState>
+					<direction>none</direction>
+					<requiresRed>TrafficLight.00_03,TrafficLight.00_04</requiresRed>
+        		</trafficLight>
+        		<trafficLight id="TrafficLight.00_02" phasePosition="2">
+        			<initialState>red</initialState>
+					<direction>none</direction>
+					<requiresRed>TrafficLight.00_03,TrafficLight.00_04</requiresRed>
+        		</trafficLight>
+        		<trafficLight id="TrafficLight.00_03" phasePosition="3">
+        			<initialState>red</initialState>
+					<direction>none</direction>
+					<requiresRed>TrafficLight.00_01,TrafficLight.00_02</requiresRed>
+        		</trafficLight>
+        		<trafficLight id="TrafficLight.00_04" phasePosition="4">
+        			<initialState>red</initialState>
+					<direction>none</direction>
+					<requiresRed>TrafficLight.00_01,TrafficLight.00_02</requiresRed>
+        		</trafficLight>
+       		</trafficLights>
+       	</intersection>
+       	<intersection id="Intersection1" mode="trigger">
+       		<phases>				
+				<phase id="04" duration="50" state="rrr"/>
+				<phase id="05" duration="50" state="rrr"/>
+				<phase id="06" duration="300" state="rrr"/>
+			</phases>
+			<trafficLights>
+        		<trafficLight id="TrafficLight.01_01" phasePosition="1">
+					<direction>none</direction>
+					<requiresRed>TrafficLight.01_03</requiresRed>
+        		</trafficLight>
+        		<trafficLight id="TrafficLight.01_02" phasePosition="2">
+					<direction>none</direction>
+					<requiresRed>TrafficLight.01_03</requiresRed>
+        		</trafficLight>
+        		<trafficLight id="TrafficLight.01_03" phasePosition="3">
+					<direction>none</direction>
+					<requiresRed>TrafficLight.01_01,TrafficLight.01_02</requiresRed>
+        		</trafficLight>
+        	</trafficLights>
+       	</intersection>
+       	<intersection id="Intersection2" mode="trigger">
+       		<phases>				
+				<phase id="04" duration="50" state="rrx"/>
+				<phase id="05" duration="50" state="rry"/>
+				<phase id="06" duration="300" state="rrg"/>
+			</phases>
+			<trafficLights>
+        		<trafficLight id="TrafficLight.02_01" phasePosition="1">
+					<direction>none</direction>
+					<requiresRed>TrafficLight.02_03,TrafficLight.02_04</requiresRed>
+        		</trafficLight>       		
+        		<trafficLight id="TrafficLight.02_03" phasePosition="3">
+					<direction>none</direction>
+					<requiresRed>TrafficLight.02_01</requiresRed>
+        		</trafficLight>
+        		<trafficLight id="TrafficLight.02_04" phasePosition="4">
+					<direction>none</direction>
+					<requiresRed>TrafficLight.02_01</requiresRed>
+        		</trafficLight>
+       		</trafficLights>
+       	</intersection>
+       	<intersection id="Intersection3" mode="trigger">
+       		<phases>				
+				<phase id="04" duration="50" state="rrx"/>
+				<phase id="05" duration="50" state="rry"/>
+				<phase id="06" duration="300" state="rrg"/>
+			</phases>
+			<trafficLights>
+        		
+        		<trafficLight id="TrafficLight.03_02" phasePosition="2">
+					<direction>none</direction>
+					<requiresRed>TrafficLight.03_03,TrafficLight.03_04</requiresRed>
+        		</trafficLight>
+        		<trafficLight id="TrafficLight.03_03" phasePosition="3">
+					<direction>none</direction>
+					<requiresRed>TrafficLight.03_02</requiresRed>
+        		</trafficLight>
+        		<trafficLight id="TrafficLight.03_04" phasePosition="4">
+					<direction>none</direction>
+					<requiresRed>TrafficLight.03_02</requiresRed>
+        		</trafficLight>
+       		</trafficLights>
+       	</intersection>
+       	
+        </road>
+        
+</scenario>

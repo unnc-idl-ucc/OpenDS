@@ -1,6 +1,0 @@
-TrafficLight_;   Models/TrafficLight/trafficlight.scene;   0 , -0.16, -2;   0,0,0;   2.0,2.0,2.0;
-Tree1_;Models/Trees/1-1/tree-1.scene;0,0,-15;270,0,0;0.3,0.3,0.3;
-Tree2_;Models/Trees/2-2/tree-2.scene;0,0,-15;270,0,0;0.3,0.3,0.3;
-Tree3_;Models/Trees/3-3/tree-3.scene;0,0,-15;270,0,0;0.3,0.3,0.3;
-Tree4_;Models/Trees/4-4/tree-4.scene;0,0,-15;270,0,0;0.3,0.3,0.3;
-Tree5_;Models/Trees/5-5/tree-5.scene;0,0,-15;270,0,0;0.3,0.3,0.3;

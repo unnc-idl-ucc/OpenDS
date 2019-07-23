@@ -1,0 +1,115 @@
+<scene formatVersion="1.0.0">
+  <nodes>
+    <node name="CityEngineShapeMa.009">
+      <position x="0.000000" y="0.000000" z="0.000000"/>
+      <quaternion x="0.000000" y="0.000000" z="0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="CityEngineShapeMa.009" meshFile="CityEngineShapeMa.009.mesh"/>
+    </node>
+    <node name="CityEngineShapeMa.008">
+      <position x="0.000000" y="0.000000" z="0.000000"/>
+      <quaternion x="0.000000" y="0.000000" z="0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="CityEngineShapeMa.008" meshFile="CityEngineShapeMa.008.mesh"/>
+    </node>
+    <node name="CityEngineShapeMa.003">
+      <position x="0.000000" y="0.000000" z="0.000000"/>
+      <quaternion x="0.000000" y="0.000000" z="0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="CityEngineShapeMa.003" meshFile="CityEngineShapeMa.003.mesh"/>
+    </node>
+    <node name="CityEngineShapeMa.002">
+      <position x="0.000000" y="0.000000" z="0.000000"/>
+      <quaternion x="0.000000" y="0.000000" z="0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="CityEngineShapeMa.002" meshFile="CityEngineShapeMa.002.mesh"/>
+    </node>
+    <node name="CityEngineShapeMa.001">
+      <position x="0.000000" y="0.000000" z="0.000000"/>
+      <quaternion x="0.000000" y="0.000000" z="0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="CityEngineShapeMa.001" meshFile="CityEngineShapeMa.001.mesh"/>
+    </node>
+    <node name="CityEngineShapeMa.007">
+      <position x="0.000000" y="0.000000" z="0.000000"/>
+      <quaternion x="0.000000" y="0.000000" z="0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="CityEngineShapeMa.007" meshFile="CityEngineShapeMa.007.mesh"/>
+    </node>
+    <node name="CityEngineShapeMa.006">
+      <position x="0.000000" y="0.000000" z="0.000000"/>
+      <quaternion x="0.000000" y="0.000000" z="0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="CityEngineShapeMa.006" meshFile="CityEngineShapeMa.006.mesh"/>
+    </node>
+    <node name="CityEngineShapeMa.005">
+      <position x="0.000000" y="0.000000" z="0.000000"/>
+      <quaternion x="0.000000" y="0.000000" z="0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="CityEngineShapeMa.005" meshFile="CityEngineShapeMa.005.mesh"/>
+    </node>
+    <node name="CityEngineShapeMa.004">
+      <position x="0.000000" y="0.000000" z="0.000000"/>
+      <quaternion x="0.000000" y="0.000000" z="0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="CityEngineShapeMa.004" meshFile="CityEngineShapeMa.004.mesh"/>
+    </node>
+    <node name="CityEngineShapeMa.014">
+      <position x="0.000000" y="0.000000" z="0.000000"/>
+      <quaternion x="0.000000" y="0.000000" z="0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="CityEngineShapeMa.014" meshFile="CityEngineShapeMa.014.mesh"/>
+    </node>
+    <node name="CityEngineShapeMa.015">
+      <position x="0.000000" y="0.000000" z="0.000000"/>
+      <quaternion x="0.000000" y="0.000000" z="0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="CityEngineShapeMa.015" meshFile="CityEngineShapeMa.015.mesh"/>
+    </node>
+    <node name="CityEngineShapeMa.010">
+      <position x="0.000000" y="0.000000" z="0.000000"/>
+      <quaternion x="0.000000" y="0.000000" z="0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="CityEngineShapeMa.010" meshFile="CityEngineShapeMa.010.mesh"/>
+    </node>
+    <node name="CityEngineShapeMa.011">
+      <position x="0.000000" y="0.000000" z="0.000000"/>
+      <quaternion x="0.000000" y="0.000000" z="0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="CityEngineShapeMa.011" meshFile="CityEngineShapeMa.011.mesh"/>
+    </node>
+    <node name="CityEngineShapeMa.012">
+      <position x="0.000000" y="0.000000" z="0.000000"/>
+      <quaternion x="0.000000" y="0.000000" z="0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="CityEngineShapeMa.012" meshFile="CityEngineShapeMa.012.mesh"/>
+    </node>
+    <node name="CityEngineShapeMa.013">
+      <position x="0.000000" y="0.000000" z="0.000000"/>
+      <quaternion x="0.000000" y="0.000000" z="0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="CityEngineShapeMa.013" meshFile="CityEngineShapeMa.013.mesh"/>
+    </node>
+    <node name="CityEngineShapeMateri">
+      <position x="0.000000" y="0.000000" z="0.000000"/>
+      <quaternion x="0.000000" y="0.000000" z="0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="CityEngineShapeMateri" meshFile="CityEngineShapeMateri.mesh"/>
+    </node>
+    <node name="CityEngineShapeMa">
+      <position x="0.000000" y="0.000000" z="0.000000"/>
+      <quaternion x="0.000000" y="0.000000" z="0.000000" w="1.000000"/>
+      <scale x="1.000000" y="1.000000" z="1.000000"/>
+      <entity name="CityEngineShapeMa" meshFile="CityEngineShapeMa.mesh"/>
+    </node>
+  </nodes>
+  <externals>
+    <item type="material">
+      <file name="Scene.material"/>
+    </item>
+  </externals>
+  <environment>
+    <colourAmbient r="0.000000" g="0.000000" b="0.000000"/>
+    <colourBackground r="0.056563" g="0.220815" b="0.400000"/>
+  </environment>
+</scene>

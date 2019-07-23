@@ -1,0 +1,354 @@
+material CityEngineShapeMa.009
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 0.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture House_white_wall.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material CityEngineShapeMa.008
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 0.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture Concrete_bottom.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material CityEngineShapeMa.003
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 0.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture House_front.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material CityEngineShapeMa.002
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 0.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture Ramp_front.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material CityEngineShapeMa.001
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 0.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture Ramp_inside_wall.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material CityEngineShapeMa.007
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 0.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture Ramp_side.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material CityEngineShapeMa.006
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 0.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+		}
+	}
+}
+material CityEngineShapeMa.005
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 0.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			specular 0.000000 0.000000 0.000000 0.000000 0.250000
+			emissive 0.000000 0.000000 0.000000 0.000000
+			scene_blend alpha_blend
+			depth_write off
+			texture_unit
+			{
+				texture Green_plane.png
+				tex_address_mode wrap
+				filtering trilinear
+			}
+		}
+	}
+}
+material CityEngineShapeMa.004
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 0.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			specular 0.000000 0.000000 0.000000 0.000000 0.250000
+			emissive 0.000000 0.000000 0.000000 0.000000
+			scene_blend alpha_blend
+			depth_write off
+			texture_unit
+			{
+				texture Yellow_line.png
+				tex_address_mode wrap
+				filtering trilinear
+			}
+		}
+	}
+}
+material CityEngineShapeMa.014
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 0.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture Ramp_bottom.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material CityEngineShapeMa.015
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 0.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture Orange_paint.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material CityEngineShapeMa.010
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 0.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			specular 0.000000 0.000000 0.000000 0.000000 0.250000
+			emissive 0.000000 0.000000 0.000000 0.000000
+			scene_blend alpha_blend
+			depth_write off
+			texture_unit
+			{
+				texture Marking_bottom.png
+				tex_address_mode wrap
+				filtering trilinear
+			}
+		}
+	}
+}
+material CityEngineShapeMa.011
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 0.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			specular 0.000000 0.000000 0.000000 0.000000 0.250000
+			emissive 0.000000 0.000000 0.000000 0.000000
+			scene_blend alpha_blend
+			depth_write off
+			texture_unit
+			{
+				texture Green_plane_ground_floor.png
+				tex_address_mode wrap
+				filtering trilinear
+			}
+		}
+	}
+}
+material CityEngineShapeMa.012
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 0.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture Ramp_white_side.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material CityEngineShapeMa.013
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 0.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture Blue_paint.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material CityEngineShapeMateri
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 0.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture Post_inner.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
+material CityEngineShapeMa
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			specular 0.000000 0.000000 0.000000 1.000000 0.250000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture House_white_wall_large.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op alpha_blend
+			}
+		}
+	}
+}
