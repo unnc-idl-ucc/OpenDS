@@ -1,0 +1,12 @@
+<lightTextures>
+	<position path="chassis/chassis-entity/Chassis-ogremesh/Chassis-geom-1" >
+		<allOff texture="veh_kama.png" />
+		<leftTurn texture="veh_kama_leftTurn.png" />
+		<rightTurn texture="veh_kama_rightTurn.png" />
+		<hazardLights texture="veh_kama_hazardLights.png" />
+		<brakeLights texture="veh_kama_brake.png" />
+		<leftTurnBrakeLights texture="veh_kama_brake_leftTurn.png" />
+		<rightTurnBrakeLights texture="veh_kama_brake_rightTurn.png" />
+		<hazardLightsBrakeLights texture="veh_kama_brake_hazardLights.png" />
+	</position>
+</lightTextures>
